@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 mod]]></title>
+		<description lang="en"><![CDATA[a small mod that allows the styling of code using a custom bbcode.]]></description>
+		<author-notes lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
+
+USAGE
+
+[code2={SIMPLETEXT}]{TEXT}[/code2]
+
+HTML Replace
+
+<pre class="brush: {SIMPLETEXT}">
+{TEXT}
+</pre>
+
+
+HELPLINE
+
+you need to specify a language for each calling of the bbcode by doing this code=html or code=php
+so when you call the bbcode you will get this [code2=]some code[/code2]  what you do is put your codes between the tags then tell it what type of code is there by doing this [code2=html]some code[/code2]
+
+The Brushes are dynamically loaded according to what is called through the bbcodes. 
+
+all files included use the MIT / GPL v2 license]]></author-notes>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+			</author>
+		</author-group>
+		<mod-version>1</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.10</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/js/syntaxhighlighter3/js/*.*" to="js/syntaxhighlighter3/js/*.*"/>
+			<file from="root/js/syntaxhighlighter3/brushes/*.*" to="js/syntaxhighlighter3/brushes/*.*"/>
+			<file from="root/js/syntaxhighlighter3/styles/*.*" to="js/syntaxhighlighter3/styles/*.*"/>
+			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
+		</copy>
+		<open src="styles/prosilver/template/overall_footer.html">
+			<edit>
+				<find><![CDATA[<div id="page-footer">]]></find>
+				<action type="after-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[</head>]]></find>
+				<action type="before-add"><![CDATA[<!-- Syntax Highlighter 3 -->
+
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shAutoloader.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></action>
+			</edit>
+		</open>
+	</action-group>
+</mod>
