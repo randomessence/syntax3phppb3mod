@@ -20,7 +20,6 @@ HTML Replace
 {TEXT}
 </pre>
 
-
 HELPLINE
 
 you need to specify a language for each calling of the bbcode by doing this code=html or code=php
@@ -51,7 +50,9 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 		<open src="styles/prosilver/template/overall_footer.html">
 			<edit>
 				<find><![CDATA[<div id="page-footer">]]></find>
-				<action type="after-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
+				<action type="after-add"><![CDATA[<!-- IF S_VIEWTOPIC -->
+<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->
+<!-- ENDIF -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_header.html">
@@ -65,5 +66,20 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></action>
 			</edit>
 		</open>
+		<diy-instructions lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
+
+USAGE
+
+[code2={SIMPLETEXT}]{TEXT}[/code2]
+
+HTML Replace
+
+<pre class="brush: {SIMPLETEXT}">
+{TEXT}
+</pre>
+
+HELPLINE
+
+you need to specify a language for each calling of the bbcode by doing this code=html or code=php]]></diy-instructions>
 	</action-group>
 </mod>
