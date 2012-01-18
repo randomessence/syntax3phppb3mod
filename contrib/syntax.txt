@@ -1,0 +1,46 @@
+Language                        Alias
+
+
+ActionScript                    as3
+Ada                             ada		
+Assembler ASM / NASM / MASM2    nasm8086 8086 nasm asm masm	
+AppleScript                     applescript
+AutoHotKey                      ahk autohotkey
+Bash / Shell                    bash shell	 
+Batch                           bat batch cmd
+C#                              c# c-sharp csharp
+C++                             cpp c
+Clojure                         clojure Clojure clj
+Coffee Script                   coffee
+ColdFusion                      cf coldfusion
+CSS                             css
+Delphi                          delphi pas pascal
+Diff                            diff patch
+Erlang                          erlang, erl
+F#                              f# f-sharp fsharp
+Groovy                          groovy
+Java                            java
+JavaFX                          jfx javafx 
+JavaScript                      js jscript javascript
+LaTeX                           latex tex
+LSL                             lsl
+Lua                             lua
+Mathematica                     mathematica mm 
+MATLAB                          matlab
+Objective-C / Cocoa             objc obj-c
+Perl                            perl pl
+PHP                             php
+Plain Text                      plain text
+PowerShell                      ps powershell
+Processing                      processing Processing
+Python                          py python
+RouterOS                        ros
+RPG / ILE-RPG                   rpgle rpg4
+Ruby                            rails ror, ruby
+Sahi                            sahi sahiscript
+Sass                            sass scss
+Scala                           scala
+SQL                             sql
+Visual Basic                    vb vbnet
+YAML                            yaml yml
+XML                             xml xhtml xslt html xhtml

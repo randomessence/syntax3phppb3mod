@@ -6,8 +6,8 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 mod]]></title>
-		<description lang="en"><![CDATA[a small mod that allows the styling of code using a custom bbcode.]]></description>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 mod]]></title>
+		<description lang="en"><![CDATA[a small mod that allows the styling of code using javascript and a custom bbcode.]]></description>
 		<author-notes lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
 
 USAGE
@@ -16,6 +16,7 @@ USAGE
 
 HTML Replace
 
+<h4>{SIMPLETEXT} code</h4>
 <pre class="brush: {SIMPLETEXT}">
 {TEXT}
 </pre>
@@ -27,18 +28,43 @@ so when you call the bbcode you will get this [code2=]some code[/code2]  what yo
 
 The Brushes are dynamically loaded according to what is called through the bbcodes. 
 
+Please see the contrib/syntax.txt for a detailed list of supported languages and usable aliases
+
 all files included use the MIT / GPL v2 license]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.0.0</mod-version>
+		<mod-version>1.0.2</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
 			<target-version>3.0.10</target-version>
 		</installation>
+		<history>
+			<entry>
+				<date>2012-01-14</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[First version.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-18</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added 19 new brushes.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-18</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[updated bbcode to post a title based on the alias used. updated notes]]></change>
+				</changelog>
+			</entry>
+		</history>
 	</header>
 	<action-group>
 		<copy>
@@ -74,6 +100,7 @@ USAGE
 
 HTML Replace
 
+<h4>{SIMPLETEXT} code</h4>
 <pre class="brush: {SIMPLETEXT}">
 {TEXT}
 </pre>
