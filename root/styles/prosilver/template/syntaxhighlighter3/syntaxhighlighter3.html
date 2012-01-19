@@ -5,11 +5,11 @@ var args = arguments,
 result = [];
 
 for(var i = 0; i != (args.length-1); i++)
-result.push(
-args[i].replace('@','{ROOT_PATH}js/syntaxhighlighter3/brushes/'));
+result.push(args[i].replace('@','{ROOT_PATH}js/syntaxhighlighter3/brushes/'));
 
 return result
 };
+
 SyntaxHighlighter.autoloader.apply(null, path(
 'actionscript3 as3 @shBrushAS3.js',
 'ada @shBrushAda.js',
@@ -52,9 +52,10 @@ SyntaxHighlighter.autoloader.apply(null, path(
 'sql @shBrushSql.js',
 'vb vbnet @shBrushVb.js',
 'xml xhtml xslt html @shBrushXml.js',
-'xml @shBrushXml.js',
-'yaml yml @shBrushYaml.js'
+'yaml yml @shBrushYaml.js',
+'end of line'
 ));
+
 SyntaxHighlighter.all()
 SyntaxHighlighter.config.bloggerMode = true;
 </script>
