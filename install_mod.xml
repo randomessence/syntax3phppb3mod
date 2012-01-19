@@ -24,6 +24,8 @@ HTML Replace
 HELPLINE
 
 you need to specify a language for each calling of the bbcode by doing this code=html or code=php
+
+
 so when you call the bbcode you will get this [code2=]some code[/code2]  what you do is put your codes between the tags then tell it what type of code is there by doing this [code2=html]some code[/code2]
 
 The Brushes are dynamically loaded according to what is called through the bbcodes. 
@@ -36,7 +38,7 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.0.2</mod-version>
+		<mod-version>1.0.3</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -62,6 +64,15 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 				<rev-version>1.0.2</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[updated bbcode to post a title based on the alias used. updated notes]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-19</date>
+				<rev-version>1.0.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed script ahead of mod submission]]></change>
+					<change><![CDATA[fixed matlab brush using wrong alias]]></change>
+					<change><![CDATA[fixed end of line in autoloader script not allowing last brush to be called]]></change>
 				</changelog>
 			</entry>
 		</history>
