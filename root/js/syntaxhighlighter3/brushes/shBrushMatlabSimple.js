@@ -15,4 +15,4 @@ SyntaxHighlighter.brushes.MatlabKey = function()
   ];
 };
 SyntaxHighlighter.brushes.MatlabKey.prototype	= new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.MatlabKey.aliases	= ['matlabkey'];
+SyntaxHighlighter.brushes.MatlabKey.aliases	= ['matlab'];
