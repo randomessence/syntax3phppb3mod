@@ -190,7 +190,7 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 		<open src="styles/prosilver/template/overall_footer.html">
 			<edit>
 				<find><![CDATA[</body>]]></find>
-				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3v2.html -->]]></action>
+				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_header.html">

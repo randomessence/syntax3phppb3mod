@@ -1,66 +1,51 @@
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shAutoloader.js"></script>
 <script type='text/javascript'>
-
 // <![CDATA[
-
-function path()
-{
-var args = arguments,
-result = [];
-
-for(var i = 0; i != (args.length-1); i++)
-result.push(args[i].replace('@','{ROOT_PATH}js/syntaxhighlighter3/brushes/'));
-
-return result
-};
-
-SyntaxHighlighter.autoloader.apply(null, path(
-'actionscript3 as3 @shBrushAS3.js',
-'ada @shBrushAda.js',
-'applescript @shBrushAppleScript.js',
-'ahk autohotkey @shBrushAhk.js',
-'asm masm nasm8086 8086 nasm @shBrushNasm8086.js',
-'bash shell @shBrushBash.js',
-'bat batch cmd @shBrushBat.js',
-'clojure Clojure clj @shBrushClojure.js',
-'coffee @shBrushcoffee.js',
-'coldfusion cf @shBrushColdFusion.js',
-'cpp c @shBrushCpp.js',
-'c# c-sharp csharp @shBrushCSharp.js',
-'css @shBrushCss.js',
-'delphi pascal @shBrushDelphi.js',
-'diff patch pas @shBrushDiff.js',
-'erl erlang @shBrushErlang.js',
-'f# f-sharp fsharp @shBrushFSharp.js',
-'groovy @shBrushGroovy.js',
-'java @shBrushJava.js',
-'jfx javafx @shBrushJavaFX.js',
-'js jscript javascript @shBrushJScript.js',
-'latex tex @shBrushLatex.js',
-'lsl @shBrushLsl.js',
-'lua @shBrushLua.js',
-'mathematica mm @shBrushMathematica.js',
-'matlab @shBrushMatlabSimple.js',
-'objc obj-c @shBrushObjectiveC.js',
-'perl pl @shBrushPerl.js',
-'php @shBrushPhp.js',
-'text plain @shBrushPlain.js',
-'processing Processing @shBrushProcessing.js',
-'py python @shBrushPython.js',
-'ros @shBrushRouterOS.js',
-'rpgle rpg4 @shBrushRpgle.js',
-'ruby rails ror rb @shBrushRuby.js',
-'sahi sahiscript @shBrushSahi.js',
-'sass scss @shBrushSass.js',
-'scala @shBrushScala.js',
-'sql @shBrushSql.js',
-'vb vbnet @shBrushVb.js',
-'xml xhtml xslt html @shBrushXml.js',
-'yaml yml @shBrushYaml.js',
-'end of line'
-));
-
-SyntaxHighlighter.all()
+SyntaxHighlighter.autoloader(
+'actionscript3 as3 {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushAS3.js',
+'ada {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushAda.js',
+'applescript {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushAppleScript.js',
+'ahk autohotkey {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushAhk.js',
+'asm masm nasm8086 8086 nasm {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushNasm8086.js',
+'bash shell {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushBash.js',
+'bat batch cmd {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushBat.js',
+'clojure Clojure clj {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushClojure.js',
+'coffee {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushcoffee.js',
+'coldfusion cf {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushColdFusion.js',
+'cpp c {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushCpp.js',
+'c# c-sharp csharp {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushCSharp.js',
+'css {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushCss.js',
+'delphi pascal {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushDelphi.js',
+'diff patch pas {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushDiff.js',
+'erl erlang {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushErlang.js',
+'f# f-sharp fsharp {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushFSharp.js',
+'groovy {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushGroovy.js',
+'java {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushJava.js',
+'jfx javafx {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushJavaFX.js',
+'js jscript javascript {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushJScript.js',
+'latex tex {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushLatex.js',
+'lsl {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushLsl.js',
+'lua {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushLua.js',
+'mathematica mm {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushMathematica.js',
+'matlab {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushMatlabSimple.js',
+'objc obj-c {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushObjectiveC.js',
+'perl pl {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushPerl.js',
+'php {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushPhp.js',
+'text plain {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushPlain.js',
+'processing Processing {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushProcessing.js',
+'py python {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushPython.js',
+'ros {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushRouterOS.js',
+'rpgle rpg4 {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushRpgle.js',
+'ruby rails ror rb {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushRuby.js',
+'sahi sahiscript {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushSahi.js',
+'sass scss {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushSass.js',
+'scala {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushScala.js',
+'sql {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushSql.js',
+'vb vbnet {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushVb.js',
+'xml xhtml xslt html {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushXml.js',
+'yaml yml {ROOT_PATH}js/syntaxhighlighter3/brushes/shBrushYaml.js'
+);
 SyntaxHighlighter.config.bloggerMode = true;
-
+SyntaxHighlighter.all();
 // ]]>
 </script>
