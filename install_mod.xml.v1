@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.2]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 mod]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 42 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .
@@ -36,7 +36,7 @@ HELPLINE
 
 USE THE DROP DOWN MENU 
 
-or if you want to use the bbcode 
+or (if the bbcode is displayed on the posting page)
 
 you need to specify a language for each calling of the bbcode by doing this [code2=html]some html code goes here[/code2] or [code2=php]some php code goes here [/code2]
 
@@ -56,7 +56,7 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.1.2</mod-version>
+		<mod-version>1.1.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -105,13 +105,6 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 				<rev-version>1.1.0</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[added a drop down menu for syntax selction.]]></change>
-				</changelog>
-			</entry>
-			<entry>
-				<date>2012-08-04</date>
-				<rev-version>1.1.2</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[re wrote the auto loader script to be less verbose. added regex script]]></change>
 				</changelog>
 			</entry>
 		</history>
@@ -189,16 +182,17 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 		</open>
 		<open src="styles/prosilver/template/overall_footer.html">
 			<edit>
-				<find><![CDATA[</body>]]></find>
-				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3v2.html -->]]></action>
+				<find><![CDATA[<div id="page-footer">]]></find>
+				<action type="after-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[</head>]]></find>
 				<action type="before-add"><![CDATA[<!-- Syntax Highlighter 3 -->
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp.js"></script>
+
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shAutoloader.js"></script>
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></action>
 			</edit>
@@ -287,9 +281,10 @@ HELPLINE
 
 [code2={required brush without brackets such as html}]some code[/code2] so it looks like [code2=html]<head></head>[/code2]
 
+
 USE THE DROP DOWN MENU 
 
-or if you want to use the bbcode 
+or (if the bbcode is displayed on the posting page)
 
 you need to specify a language for each calling of the bbcode by doing this [code2=html]some html code goes here[/code2] or [code2=php]some php code goes here [/code2]
 
