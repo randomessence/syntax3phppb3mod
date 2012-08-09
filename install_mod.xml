@@ -114,6 +114,13 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 					<change><![CDATA[re wrote the auto loader script to be less verbose. added regex script]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-08-09</date>
+				<rev-version>1.1.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed problems with the coffescript,masm2 and powershgell brushes loading.]]></change>
+				</changelog>
+			</entry>
 		</history>
 	</header>
 	<action-group>
