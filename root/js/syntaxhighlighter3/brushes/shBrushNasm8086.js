@@ -13,4 +13,4 @@ var C = "AX AH AL BX BH BL CX CH CL DX DH DL ax ah al bx bh bl cx ch cl dx dh dl
 ;this.regexList=[{regex:SyntaxHighlighter.regexLib.doubleQuotedString,css:"string"},{regex:SyntaxHighlighter.regexLib.singleQuotedString,css:"string"},{regex:/^ *;.*/gm,css:"comments"},{regex:new RegExp(this.getKeywords(C),"gm"),css:"color1 bold"},{regex:new RegExp(this.getKeywords(B),"gm"),css:"functions bold"},{regex:new RegExp(this.getKeywords(A),"gm"),css:"keyword bold"}];
 };
 SyntaxHighlighter.brushes.Nasm8086.prototype=new SyntaxHighlighter.Highlighter();
-SyntaxHighlighter.brushes.Nasm8086.aliases=["nasm8086","8086","nasm","asm","masm"];
+SyntaxHighlighter.brushes.Nasm8086.aliases=["nasm8086","8086","nasm","asm","masm","masm2"];
