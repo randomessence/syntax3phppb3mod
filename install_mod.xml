@@ -133,7 +133,7 @@ all files included use the MIT / GPL v2 license]]></author-notes>
     'BBCODE40_ADA'   => 'ada',
     'BBCODE40_ASSEMBLER_ASM'   => 'asm',
     'BBCODE40_ASSEMBLER_NASM'   => 'nasm',
-    'BBCODE40_ASSEMBLER_MASM2'   => 'masm2',
+    'BBCODE40_ASSEMBLER_MASM'   => 'masm',
     'BBCODE40_APPLESCRIPT'   => 'applescript',
     'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
     'BBCODE40_BASH'   => 'bash',
@@ -215,7 +215,7 @@ all files included use the MIT / GPL v2 license]]></author-notes>
 				<option value="{L_BBCODE40_ADA}">Ada</option>
 				<option value="{L_BBCODE40_ASSEMBLER_ASM}">Assembler ASM</option>
 				<option value="{L_BBCODE40_ASSEMBLER_NASM}">Assembler NASM</option>
-				<option value="{L_BBCODE40_ASSEMBLER_MASM2}">Assembler MASM2</option>
+				<option value="{L_BBCODE40_ASSEMBLER_MASM}">Assembler MASM</option>
 				<option value="{L_BBCODE40_APPLESCRIPT}">Applescript</option>
 				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
 				<option value="{L_BBCODE40_BASH}">Bash</option>
