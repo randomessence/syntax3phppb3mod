@@ -30,6 +30,12 @@ and add -min to the name of the 2 .js lines
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp-min.js"></script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore-min.js"></script>
 
+
+
+Languages:
+
+find them ( if avialable ) in the contrib/languages/ folder. use the install.xml for you language and replace the one that comes with the mod.
+
 --------------------------------------------------------------------------------------------------------
 
 once the mod is installed you need to add a new bbcode
