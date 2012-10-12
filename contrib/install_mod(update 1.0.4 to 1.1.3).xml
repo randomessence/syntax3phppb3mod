@@ -6,15 +6,15 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[SyntaxHighlighter3 1.0.4 to 1.1.4 UPDATE]]></title>
-		<description lang="en"><![CDATA[Syntax highlighter 3 1.0.4 update 1.1.4]]></description>
+		<title lang="en"><![CDATA[Syntaxhighlighter3 1.0.4 to 1.1.3 UPDATE]]></title>
+		<description lang="en"><![CDATA[syntax highlighter 3 1.0.4 update 1.1.3]]></description>
 		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.1.4</mod-version>
+		<mod-version>1.1.3</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -79,13 +79,6 @@
 					<change><![CDATA[fixed problems with the coffescript,masm2 and powershgell brushes loading.]]></change>
 				</changelog>
 			</entry>
-			<entry>
-				<date>2012-10-07</date>
-				<rev-version>1.1.4</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[mod val suggestions. tweaked install.xml , also included minified versions of core scripts.]]></change>
-				</changelog>
-			</entry>
 		</history>
 	</header>
 	<action-group>
@@ -98,16 +91,17 @@
 		<open src="language/en/posting.php">
 			<edit>
 				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
-				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
+				<action type="after-add"><![CDATA[/** Begin syntaxhighlighter3 */
+           
 	'SYNTAX3'         => 'Select a Syntax',
-	'BBCODE40_ACTIONSCRIPT'      => 'as3',
-	'BBCODE40_ADA'   => 'ada',
-	'BBCODE40_ASSEMBLER_ASM'   => 'asm',
-	'BBCODE40_ASSEMBLER_NASM'   => 'nasm',
-	'BBCODE40_ASSEMBLER_MASM'   => 'masm',
-	'BBCODE40_APPLESCRIPT'   => 'applescript',
-	'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
-	'BBCODE40_BASH'   => 'bash',
+    'BBCODE40_ACTIONSCRIPT'      => 'as3',
+    'BBCODE40_ADA'   => 'ada',
+    'BBCODE40_ASSEMBLER_ASM'   => 'asm',
+    'BBCODE40_ASSEMBLER_NASM'   => 'nasm',
+    'BBCODE40_ASSEMBLER_MASM'   => 'masm',
+    'BBCODE40_APPLESCRIPT'   => 'applescript',
+    'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
+    'BBCODE40_BASH'   => 'bash',
 	'BBCODE40_SHELL'   => 'shell',
 	'BBCODE40_BATCH'   => 'batch',
 	'BBCODE40_CSHARP'   => 'csharp',
@@ -153,7 +147,9 @@
 	'BBCODE40_XHTML'   => 'xhtml',
 	'BBCODE40_XML'   => 'xml',
 	'BBCODE40_XSLT'   => 'xslt',
-// Begin syntaxhighlighter3]]></action>
+		   
+
+/** End syntaxhighlighter3 */]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/overall_footer.html">
@@ -255,7 +251,7 @@ USAGE
 
 HTML Replace
 
-<b>{SIMPLETEXT} code</b>
+<h4>{SIMPLETEXT} code</h4>
 <pre class="brush: {SIMPLETEXT}">
 {TEXT}
 </pre>

@@ -15,22 +15,28 @@ Inside this contribution folder, you will find several useful files of the gener
 1: The autoloader brushes text file contains a list of all the included autoloader brushes and aliases in the HTML file that is loaded your selected style. This inclusion is to show how the brushes are called and how the aliases are represented for each brush.
 The one crucial thing to know is that the last line does not have comma at the end, aside from that every new addition must be closed with comma at the end of the line.
 
-2: The install_mod(update 1.0.4 to 1.1.4) is ready to be used to update version 1.0.4 to 1.1.4 . Also included is a text file detialing th erequired edits to do this manually.
+2: The install_mod(update 1.0.4 to 1.1.4) is ready to be used to update version 1.0.4 to 1.1.4 . delete the mod's install.xml and replace is with the update xml you need renaming it to install.xml
+
+updates included.
+
+1.0.4 to 1.1.3  updates the offical validation mods
+
+1.0.4 to 1.1.4
+
+1.1.3 to 1.1.4
+
+Also included is a text file detialing th erequired edits to do this manually.
 
 3: use inlcuded minifed core scripts : in your overall_header.html find this
 
 <!-- Syntax Highlighter 3 -->
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp.js"></script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
-<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
-<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />
 
 and add -min to the name of the 2 .js lines
 
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp-min.js"></script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore-min.js"></script>
-
-
 
 Languages:
 
