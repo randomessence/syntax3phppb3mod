@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.5]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.6]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 42 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
@@ -16,7 +16,7 @@
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.1.4</mod-version>
+		<mod-version>1.1.6</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -93,6 +93,13 @@
 				<rev-version>1.1.5</rev-version>
 				<changelog lang="en">
 					<change><![CDATA[upraged to xregexp 2.0 and higher if when needed. and various other fixes, see contrib changelog]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-10-14</date>
+				<rev-version>1.1.6</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[xregexp 3pre, fix for <br> tags. moved settings to core.js]]></change>
 				</changelog>
 			</entry>
 		</history>
@@ -182,9 +189,9 @@
 				<action type="before-add"><![CDATA[<!-- Syntax Highlighter 3 -->
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
 <script type="text/javascript">
-// <![CDATA[
+// ]]>&lt;![CDATA[<![CDATA[
 XRegExp.install('natives');
-// ]]>
+// ]]>]]&gt;<![CDATA[
 </script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
