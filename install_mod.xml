@@ -182,7 +182,9 @@
 				<action type="before-add"><![CDATA[<!-- Syntax Highlighter 3 -->
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
 <script type="text/javascript">
+// <![CDATA[
 XRegExp.install('natives');
+// ]]>
 </script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
