@@ -71,9 +71,9 @@ var sh = {
 		useScriptTags : true,
 		
 		/** Blogger mode flag. */
-		bloggerMode : false,
+		bloggerMode : true,
 		
-		stripBrs : false,
+		stripBrs : true,
 		
 		/** Name of the tag that SyntaxHighlighter will automatically look for. */
 		tagName : 'pre',
@@ -898,7 +898,7 @@ function processSmartTabs(code, tabSize)
  */
 function fixInputString(str)
 {
-	var br = /<br\s*\/?>|&lt;br\s*\/?&gt;/gi;
+	var br = /<br\s*\/?>|&lt;br\s*\/" ",?&gt;/gi;
 	
 	if (sh.config.bloggerMode == true)
 		str = str.replace(br, '\n');
