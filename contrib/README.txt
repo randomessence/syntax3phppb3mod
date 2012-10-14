@@ -25,18 +25,8 @@ updates included.
 
 1.1.3 to 1.1.4
 
-Also included is a text file detialing th erequired edits to do this manually.
+Also included is a text file detialing the required edits to do this manually.
 
-3: use inlcuded minifed core scripts : in your overall_header.html find this
-
-<!-- Syntax Highlighter 3 -->
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp.js"></script>
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
-
-and add -min to the name of the 2 .js lines
-
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp-min.js"></script>
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore-min.js"></script>
 
 Languages:
 
