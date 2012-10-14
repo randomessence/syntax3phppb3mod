@@ -92,7 +92,7 @@
 				<date>2012-10-14</date>
 				<rev-version>1.1.5</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[upraged to xregexp 2.0 and higher if when needed.]]></change>
+					<change><![CDATA[upraged to xregexp 2.0 and higher if when needed. and various other fixes, see contrib changelog]]></change>
 				</changelog>
 			</entry>
 		</history>
@@ -117,6 +117,7 @@
 	'BBCODE40_APPLESCRIPT'   => 'applescript',
 	'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
 	'BBCODE40_BASH'   => 'bash',
+	'BBCODE40_BIFERNO'   => 'biferno',
 	'BBCODE40_SHELL'   => 'shell',
 	'BBCODE40_BATCH'   => 'batch',
 	'BBCODE40_CSHARP'   => 'csharp',
@@ -133,11 +134,14 @@
 	'BBCODE40_ERLANG'   => 'erlang',
 	'BBCODE40_FSHARP'   => 'fsharp',
 	'BBCODE40_GROOVY'   => 'groovy',
+	'BBCODE40_HAXE'   => 'haxe',
 	'BBCODE40_HTML'   => 'html',
 	'BBCODE40_JAVA'   => 'java',
 	'BBCODE40_JAVAFX'   => 'javafx',
 	'BBCODE40_JAVASCRIPT'   => 'javascript',
+	'BBCODE40_LASSO'   => 'lasso',
 	'BBCODE40_LATEX'   => 'latex',
+	'BBCODE40_LOGTALK'   => 'logtalk',
 	'BBCODE40_LSL'   => 'lsl',
 	'BBCODE40_LUA'   => 'lua',
 	'BBCODE40_MATHEMATIC'   => 'mathematica',
@@ -203,6 +207,7 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_APPLESCRIPT}">Applescript</option>
 				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
 				<option value="{L_BBCODE40_BASH}">Bash</option>
+				<option value="{L_BBCODE40_BIFERNO}">Biferno</option>
 				<option value="{L_BBCODE40_SHELL}">Shell</option>
 				<option value="{L_BBCODE40_BATCH}">Batch</option>
 				<option value="{L_BBCODE40_CSHARP}">C#</option>
@@ -219,11 +224,14 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_ERLANG}">Erlang</option>
 				<option value="{L_BBCODE40_FSHARP}">F#</option>
 				<option value="{L_BBCODE40_GROOVY}">Groovy</option>
+				<option value="{L_BBCODE40_HAXE}">Haxe</option>
 				<option value="{L_BBCODE40_HTML}">html</option>
 				<option value="{L_BBCODE40_JAVA}">java</option>
 				<option value="{L_BBCODE40_JAVAFX}">java fx</option>
 				<option value="{L_BBCODE40_JAVASCRIPT}">javascript</option>
+				<option value="{L_BBCODE40_LASSO}">Lasso</option>
 				<option value="{L_BBCODE40_LATEX}">LaTeX</option>
+				<option value="{L_BBCODE40_LOGTALK}">LogTalk</option>
 				<option value="{L_BBCODE40_LSL}">LsL</option>
 				<option value="{L_BBCODE40_LUA}">Lua</option>
 				<option value="{L_BBCODE40_MATHEMATIC}">Mathmatic</option>
