@@ -127,6 +127,7 @@
 	'BBCODE40_COFFEE_SCRIPT'   => 'coffeescript',
 	'BBCODE40_COLDFUSION'   => 'coldfusion',
 	'BBCODE40_CSS'   => 'css',
+	'BBCODE40_D'   => 'd',
 	'BBCODE40_DELPHI'   => 'delphi',
 	'BBCODE40_DIFF'   => 'diff',
 	'BBCODE40_ERLANG'   => 'erlang',
@@ -212,6 +213,7 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_COFFEE_SCRIPT}">Coffee Script</option>
 				<option value="{L_BBCODE40_COLDFUSION}">Coldfusion</option>
 				<option value="{L_BBCODE40_CSS}">CSS</option>
+				<option value="{L_BBCODE40_D}">D</option>
 				<option value="{L_BBCODE40_DELPHI}">Delphi</option>
 				<option value="{L_BBCODE40_DIFF}">Diff</option>
 				<option value="{L_BBCODE40_ERLANG}">Erlang</option>
