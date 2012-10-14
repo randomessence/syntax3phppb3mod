@@ -66,11 +66,19 @@ sh.autoloader = function()
 	{
 		var url = brushes[elements[i].params.brush];
 		
-		if (!url)
-			continue;
-		
-		scripts[url] = false;
-		loadScript(url);
+		if(url && scripts[url] === undefined)
+		{
+			if(elements[i].params['html-script'] === 'true')
+			{
+				if(scripts[brushes['xml']] === undefined) {
+					loadScript(brushes['xml']);
+					scripts[url] = false;
+				}
+			}
+
+			scripts[url] = false;
+			loadScript(url);
+		}
 	}
 	
 	function loadScript(url)
