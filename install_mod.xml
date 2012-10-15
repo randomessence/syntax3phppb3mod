@@ -125,7 +125,6 @@
 	'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
 	'BBCODE40_BASH'   => 'bash',
 	'BBCODE40_BIFERNO'   => 'biferno',
-	'BBCODE40_SHELL'   => 'shell',
 	'BBCODE40_BATCH'   => 'batch',
 	'BBCODE40_CSHARP'   => 'csharp',
 	'BBCODE40_CPLUSPLUS'   => 'cpp',
@@ -169,6 +168,7 @@
 	'BBCODE40_SAHI'   => 'sahiscript',
 	'BBCODE40_SASS'   => 'sass',
 	'BBCODE40_SCALA'   => 'scala',
+	'BBCODE40_SHELL'   => 'shell',
 	'BBCODE40_SQL'   => 'sql',
 	'BBCODE40_VISUAL_BASIC'   => 'vbnet',
 	'BBCODE40_YAML'   => 'yaml',
@@ -216,7 +216,6 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
 				<option value="{L_BBCODE40_BASH}">Bash</option>
 				<option value="{L_BBCODE40_BIFERNO}">Biferno</option>
-				<option value="{L_BBCODE40_SHELL}">Shell</option>
 				<option value="{L_BBCODE40_BATCH}">Batch</option>
 				<option value="{L_BBCODE40_CSHARP}">C#</option>
 				<option value="{L_BBCODE40_CPLUSPLUS}">C++</option>
@@ -260,6 +259,7 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_SAHI}">Sahi</option>
 				<option value="{L_BBCODE40_SASS}">Sass</option>
 				<option value="{L_BBCODE40_SCALA}">Scala</option>
+				<option value="{L_BBCODE40_SHELL}">Shell</option>
 				<option value="{L_BBCODE40_SQL}">SQL</option>
 				<option value="{L_BBCODE40_VISUAL_BASIC}">Visual Basic</option>
 				<option value="{L_BBCODE40_YAML}">Yaml</option>
