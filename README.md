@@ -32,7 +32,7 @@ you will have to figure out which files you do need to edit.
 
 **Manually applied fixes**
 
-]xregexp 3 pre](https://github.com/slevithan/xregexp) using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
+[xregexp 3 pre](https://github.com/slevithan/xregexp) using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
 
 Bash brush improvements [#75](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/75)
 
@@ -65,10 +65,11 @@ ASSEMBLER_NASM
 ASSEMBLER_MASM
 APPLESCRIPT
 AUTOHOTKEY
+
 BASH
 BIFERNO
-SHELL
 BATCH
+
 CSHARP
 CPLUSPLUS
 CLOJURE
@@ -77,25 +78,35 @@ COCOA
 COFFEE_SCRIPT
 COLDFUSION
 CSS
+
 D
 DELPHI
 DIFF
+
 ERLANG
+
 FSHARP
+
 GROOVY
+
 HAXE
 HTML
+
 JAVA
 JAVAFX
 JAVASCRIPT
+
 LASSO
 LATEX
 LOGTALK
 LSL
 LUA
+
 MATHEMATIC
 MATLAB
+
 OBJECTIVE_C
+
 PASCAL
 PERL
 PHP
@@ -104,16 +115,22 @@ POWERSHELL
 PROCESSING
 PYTHON
 PYTHON3
+
 ROUTEROS
 RPG
 ILE_RPG
 RUBY
+
 SAHI
 SASS
 SCALA
+SHELL
 SQL
+
 VISUAL_BASIC
+
 YAML
+
 XHTML
 XML
 XSLT
