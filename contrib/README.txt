@@ -4,10 +4,76 @@ Updates Included.
 
 1.0.4 to 1.1.4
 
+1.0.4 to 1.1.6
+
 1.1.3 to 1.1.4
+
+1.1.3 to 1.1.6
+
+`1.1.4 to 1.1.6`
 
 Also included is a text file detialing the required edits to do this manually.
 
+Syntax Highlighter config:
+
+There are some configuration options available to the user. As of 1.1.6 these all take place in the shCore.js instead of on a per style basis.
+
+to change these options you must open the js/syntaxhighlighter3/js/shCore.js with a text editor and look for these lines between line 17 through to line 64.
+Please respect the /** DO NOT CHANGE */ comments.
+
+Configuraton Options Start here:
+
+		/** Additional CSS class names to be added to highlighter elements. */
+		'class-name' : '',
+		
+		/** First line number. */
+		'first-line' : 1,
+		
+		/**
+		 * Pads line numbers. Possible values are:
+		 *
+		 *   false - don't pad line numbers.
+		 *   true  - automaticaly pad numbers with minimum required number of leading zeroes.
+		 *   [int] - length up to which pad line numbers.
+		 */
+		'pad-line-numbers' : false,
+		
+		/** Lines to highlight. */
+		'highlight' : null,
+		
+		/** Title to be displayed above the code block. */
+		'title' : null,
+		
+		/** Enables or disables smart tabs. */
+		'smart-tabs' : true,
+		
+		/** Gets or sets tab size. */
+		'tab-size' : 4,
+		
+		/** Enables or disables gutter. */
+		'gutter' : true,
+		
+		/** Enables or disables toolbar. */
+		'toolbar' : true,
+		
+		/** Enables quick code copy and paste from double click. */
+		'quick-code' : true,
+		
+		/** Forces code view to be collapsed. */
+		'collapse' : false,
+		
+		/** Enables or disables automatic links. */
+		'auto-links' : true,
+		
+		/** Gets or sets light mode. Equavalent to turning off gutter and toolbar. */
+		'light' : false,
+
+		/** DO NOT CHANGE */
+		'unindent' : true,  
+		
+		'html-script' : false
+		
+Configuration Options End here.
 
 Languages:
 
