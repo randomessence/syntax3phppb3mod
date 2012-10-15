@@ -1,6 +1,10 @@
 Updates Included.
 
-1.0.4 to 1.1.3  updates the offical validation mods
+All core updates are applied regardless of version. meaning the 1.1.3 shCore.js upgrade has the same shCore.js as 1.1.6 when this mod is used to update. This will not break functionality of the mod. The difference is in the phpbb3 edits. 
+
+the 1.0.4 to 1.1.3 will apply the exact same edits as the version that was on phpbb.com to allow for easier updating to 1.1.6 . If you upgraded to 1.1.3 using this mod (1.1.6 version) and autoloader then manually did the 1.1.3 to 1.1.6 phpbb3 edits you would have the full 1.1.6 mod.
+
+1.0.4 to 1.1.3 
 
 1.0.4 to 1.1.4
 
