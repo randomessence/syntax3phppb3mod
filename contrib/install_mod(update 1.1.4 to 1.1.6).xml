@@ -173,7 +173,7 @@ XRegExp.install('natives');
 			<edit>
 				<find><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
 
-	<option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
+<option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
 				<option value="{L_BBCODE40_ACTIONSCRIPT}">Actionscript</option>
 				<option value="{L_BBCODE40_ADA}">Ada</option>
 				<option value="{L_BBCODE40_ASSEMBLER_ASM}">Assembler ASM</option>
@@ -227,8 +227,7 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_XHTML}">xHTML</option>
 				<option value="{L_BBCODE40_XML}">XML</option>
 				<option value="{L_BBCODE40_XSLT}">XSLT</option>
-				
-            </select>]]></find>
+</select>]]></find>
 				<action type="replace-with"><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
 
 <option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
