@@ -10,8 +10,6 @@ the 1.0.4 to 1.1.3 will apply the exact same edits as the version that was on ph
 
 1.0.4 to 1.1.6
 
-1.1.3 to 1.1.4
-
 1.1.3 to 1.1.6
 
 1.1.4 to 1.1.6
