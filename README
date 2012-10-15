@@ -8,6 +8,8 @@ It has been extended a bit over the original 3.0.83 from the [website ""http://a
 
 xregexp 3 pre using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
 
+[I'm an inline-style link](https://www.google.com)
+
 Bash brush improvements [#75 ""https://github.com/alexgorbatchev/SyntaxHighlighter/pull/75""]
 
 improved C Sharp bush [#111 ""https://github.com/alexgorbatchev/SyntaxHighlighter/pull/111""]
