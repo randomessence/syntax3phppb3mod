@@ -99,7 +99,7 @@
 				<date>2012-10-14</date>
 				<rev-version>1.1.6</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[xregexp 3pre, fix for <br> tags. moved settings to core.js]]></change>
+					<change><![CDATA[xregexp 3pre, fix for end of line tags. moved settings to core.js]]></change>
 				</changelog>
 			</entry>
 		</history>
