@@ -51,7 +51,7 @@ var sh = {
 		'quick-code' : true,
 		
 		/** Forces code view to be collapsed. */
-		'collapse' : false,
+		'collapse' : true,
 		
 		/** Enables or disables automatic links. */
 		'auto-links' : true,

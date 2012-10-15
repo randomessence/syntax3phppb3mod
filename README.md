@@ -32,7 +32,7 @@ you will have to figure out which files you do need to edit.
 
 **Manually applied fixes**
 
-xregexp 3 pre using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
+]xregexp 3 pre](https://github.com/slevithan/xregexp) using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
 
 Bash brush improvements [#75](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/75)
 
