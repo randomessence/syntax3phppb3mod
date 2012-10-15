@@ -51,7 +51,7 @@ var sh = {
 		'quick-code' : true,
 		
 		/** Forces code view to be collapsed. */
-		'collapse' : true,
+		'collapse' : false,
 		
 		/** Enables or disables automatic links. */
 		'auto-links' : true,
@@ -59,7 +59,8 @@ var sh = {
 		/** Gets or sets light mode. Equavalent to turning off gutter and toolbar. */
 		'light' : false,
 
-		'unindent' : true,
+		/** DO NOT CHANGE */
+		'unindent' : true,  
 		
 		'html-script' : false
 	},
@@ -70,9 +71,10 @@ var sh = {
 		/** Enables use of <SCRIPT type="syntaxhighlighter" /> tags. */
 		useScriptTags : true,
 		
-		/** Blogger mode flag. */
+		/** Blogger mode flag. DO NOT CHANGE */
 		bloggerMode : true,
 		
+		/** DO NOT CHANGE */		
 		stripBrs : true,
 		
 		/** Name of the tag that SyntaxHighlighter will automatically look for. */
@@ -1569,16 +1571,16 @@ sh.Highlighter.prototype = {
 			;
 
 		tabSize = this.getParam('tab-size');
+		
+		// unindent code by the common indentation
+		if (this.getParam('unindent'))
+			code = unindent(code);
 
 		// replace tabs with spaces
 		code = this.getParam('smart-tabs') == true
 			? processSmartTabs(code, tabSize)
 			: processTabs(code, tabSize)
 			;
-
-		// unindent code by the common indentation
-		if (this.getParam('unindent'))
-			code = unindent(code);
 
 		if (gutter)
 			lineNumbers = this.figureOutLineNumbers(code);

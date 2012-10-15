@@ -19,7 +19,7 @@ To summarise the mod. This is a phpbb3 3.0.11 compatible mod that makes 4 small 
 **Edit 3:** `language/en/posting.php` is edited to ADD language references for the drop down menu.
 
 **Edit 4:** `styles/prosilver/template/posting_buttons.html` is edited to add a custom drop down menu to the post editor that will automatically insert a pre-formatted bbcode with the chosen syntax into the user's post. 
-The cursor will automatically be in-between the code blocks ready to paste your code. It also works highlight any code you want prettified and then select the relevant syntax from the drop down menu.
+The cursor will automatically be in-between the code blocks ready to paste your code. It also works to highlight any code you want prettified and then select the relevant syntax from the drop down menu.
 
 **Notes:** 
 
