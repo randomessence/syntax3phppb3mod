@@ -44,6 +44,10 @@ shAutoloader.js duplicate loading and html-script support [#139](https://github.
 
 fix stripCData('ab')=='' [#153](http://https://github.com/alexgorbatchev/SyntaxHighlighter/pull/153)
 
+a = '"' was starting a multiline string, but it should not have [#112](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/112/files)
+
+Modified keywords, strings, and value in Python brush [#155](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/155)
+
 Biferno Brush [#66](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/66)
 dlan brush [#154](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/154)
 haze brush [#151](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/151)
