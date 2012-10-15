@@ -161,6 +161,7 @@
 	'BBCODE40_POWERSHELL'   => 'powershell',
 	'BBCODE40_PROCESSING'   => 'processing',
 	'BBCODE40_PYTHON'   => 'python',
+	'BBCODE40_PYTHON3'   => 'python3',
 	'BBCODE40_ROUTEROS'   => 'ros',
 	'BBCODE40_RPG'   => 'rpg4',
 	'BBCODE40_ILE_RPG'   => 'rpgle',
@@ -251,6 +252,7 @@ XRegExp.install('natives');
 				<option value="{L_BBCODE40_POWERSHELL}">Powershell</option>
 				<option value="{L_BBCODE40_PROCESSING}">Processing</option>
 				<option value="{L_BBCODE40_PYTHON}">Python</option>
+				<option value="{L_BBCODE40_PYTHON3}">Python3</option>
 				<option value="{L_BBCODE40_ROUTEROS}">Router OS</option>
 				<option value="{L_BBCODE40_RPG}">RPG</option>
 				<option value="{L_BBCODE40_ILE_RPG}">ILE RPG</option>
