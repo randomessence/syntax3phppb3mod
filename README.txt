@@ -1,6 +1,12 @@
 Hello World
 
+This is a phpbb 3 mod that uses syntax highlighter 3 by https://github.com/alexgorbatchev/
+
+It has been extended a bit over the original 3.0.83 from the website since it uses the files from the github repo as well as some selcet and applied fixes.
 Manually applied fixes
+
+xregexp 3 pre using a snippet of javascript as detailed here
+https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277
 
 Bash brush improvements #75 
 https://github.com/alexgorbatchev/SyntaxHighlighter/pull/75
