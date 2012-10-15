@@ -1,6 +1,6 @@
 **Hello World**
 
-![example](https://github.com/randomessence/syntax3phppb3mod/blob/master/contrib/example.png)
+[logo]: https://github.com/randomessence/syntax3phppb3mod/blob/master/contrib/example.png
 
 This is a phpbb 3 mod that uses [Syntax Highlighter 3](https://github.com/alexgorbatchev/)
 
