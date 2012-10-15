@@ -111,7 +111,7 @@
 			<file from="root/js/syntaxhighlighter3/styles/*.*" to="js/syntaxhighlighter3/styles/*.*"/>
 			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
 		</copy>
-		<open src="language/fr/posting.php">
+		<open src="language/en_us/posting.php">
 			<edit>
 				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
 				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
