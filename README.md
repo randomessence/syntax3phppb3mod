@@ -23,6 +23,8 @@ The cursor will automatically be in-between the code blocks ready to paste your 
 
 **Notes:** 
 
+Adding a custom bbcode is required to complete the installation of this mod. see DIY instructions or check the readme in the conrib folder.
+
 The mod does not install to non Default (EN) langauage packs. you will have to manually edit the `language/**/posting.php` of your default lanaguage pack and apply the edits.
 
 The edit to the `styles/prosilver/template/posting_buttons.html` works with template inheritence styles. if you style does not inhrerit from Prosliver and does not have a `posting_buttons.html`

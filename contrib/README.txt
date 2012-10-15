@@ -1,23 +1,4 @@
-Syntax Highlighter 3 Phpbb3 mod
-
-This mod works using using phpbb 3.0.11 using automod.
-
-This modification is made using using syntax highlighter three and consists of some very simple edits in order to allow you to highlight code meeting certain syntax requirements.
-
-There are 40 or so brushes covering 60 or so syntax making this a very versatile code highlighter PHP BB platform.
-
-In order to start using this mod you need to install it via auto mod. Once it is installed next requirement is that you enter a BB code file the ACP. You do not have to show this BB code on the posting page but it is an absolute requirement that you create the BB code. The final requirement of this mod is that you apply it to any style that is not the default pro Silver style. In order to do this you click on the mods details on the auto mod page and scroll to the bottom.
-
-Assuming that there were no problems installing using auto mod and that you have added the BB code you are now ready to start highlighting syntax.
-
-Inside this contribution folder, you will find several useful files of the general updating and core editing.
-
-1: The autoloader brushes text file contains a list of all the included autoloader brushes and aliases in the HTML file that is loaded your selected style. This inclusion is to show how the brushes are called and how the aliases are represented for each brush.
-The one crucial thing to know is that the last line does not have comma at the end, aside from that every new addition must be closed with comma at the end of the line.
-
-2: The install_mod(update 1.0.4 to 1.1.4) is ready to be used to update version 1.0.4 to 1.1.4 . delete the mod's install.xml and replace is with the update xml you need renaming it to install.xml
-
-updates included.
+Updates Included.
 
 1.0.4 to 1.1.3  updates the offical validation mods
 
@@ -70,9 +51,3 @@ please visit the FAQ for this mod for other info and tweaks
 http://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/faq/
 
 all files included use the MIT / GPL v2 license
-
-
-
-
-
-
