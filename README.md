@@ -1,5 +1,9 @@
 **Hello World**
 
+Current Version : 1.1.6
+
+phpbb.com version : [1.1.3](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sid_5e1d796a9d476069b6507f61b64c34a5)
+
 ![alt text](https://raw.github.com/randomessence/syntax3phppb3mod/master/contrib/example.png "Example")
 
 This is a phpbb 3 mod that uses [Syntax Highlighter 3](https://github.com/alexgorbatchev/SyntaxHighlighter)
@@ -19,9 +23,9 @@ The cursor will automatically be in-between the code blocks ready to paste your 
 
 **Notes:** 
 
-The mod does not install to non Default (EN) langauage packs. you will have to manually edit the language/**/posting.php of your default lanaguage pack and apply the edits.
+The mod does not install to non Default (EN) langauage packs. you will have to manually edit the `language/**/posting.php` of your default lanaguage pack and apply the edits.
 
-The edit to the `styles/prosilver/template/posting_buttons.html` works with template inheritence styles. if you style does not inhrerit from Prosliver and does not have a posting_buttons.html 
+The edit to the `styles/prosilver/template/posting_buttons.html` works with template inheritence styles. if you style does not inhrerit from Prosliver and does not have a `posting_buttons.html`
 you will have to figure out which files you do need to edit.
 
 **Manually applied fixes**
