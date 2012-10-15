@@ -1,5 +1,7 @@
 **Hello World**
 
+![example](https://github.com/randomessence/syntax3phppb3mod/blob/master/contrib/example.png)
+
 This is a phpbb 3 mod that uses [Syntax Highlighter 3](https://github.com/alexgorbatchev/)
 
 It has been extended a bit over the original 3.0.83 from the [website](http://alexgorbatchev.com/SyntaxHighlighter/) since it uses the files from the github repo as well as some select and applied fixes.
