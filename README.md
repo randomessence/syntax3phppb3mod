@@ -16,7 +16,7 @@ shAutoloader.js duplicate loading and html-script support [#139](https://github.
 
 (Java multiline comment greedy Regexp) [#150](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/150)
 
-fix stripCData('ab')=='' [#153](http://https://github.com/alexgorbatchev/SyntaxHighlighter/pull/153(
+fix stripCData('ab')=='' [#153](http://https://github.com/alexgorbatchev/SyntaxHighlighter/pull/153)
 
 
 Biferno Brush [#66](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/66)
