@@ -26,6 +26,6 @@
 
 **14:** 1.1.4 added mod validator's notes/warnings to official 1.1.3 minor edits to install.xml and also included minified (optional) versions of the core scripts (not brushes)
 
-**15:** 1.1.5 updated to xregexp 2.0 using a snippet of js code. began process of manually adding in fixes and pull requests.
+**15:** 1.1.5 updated to xregexp 2.0 using a snippet of js code. began process of manually adding in fixes and pull requests. Move all config options to the shCore.js.
 
-**16:** 1.1.6 included various fixes and pull requests. al these are listed in the github description.
+**16:** 1.1.6 included various fixes and pull requests. All these are listed in the github description once they have been committed to the repo.
