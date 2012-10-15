@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[SyntaxHighlighter3 1.0.4 to 1.1.6 UPDATE]]></title>
+		<description lang="en"><![CDATA[Syntax highlighter 3 1.0.4 update 1.1.6]]></description>
+		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.]]></author-notes>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+			</author>
+		</author-group>
+		<mod-version>1.1.4</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.11</target-version>
+		</installation>
+		<history>
+			<entry>
+				<date>2012-01-14</date>
+				<rev-version>1.0.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[First version.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-18</date>
+				<rev-version>1.0.1</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added 19 new brushes.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-18</date>
+				<rev-version>1.0.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[updated bbcode to post a title based on the alias used. updated notes]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-01-19</date>
+				<rev-version>1.0.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed script ahead of mod submission]]></change>
+					<change><![CDATA[fixed matlab brush using wrong alias]]></change>
+					<change><![CDATA[fixed end of line in autoloader script not allowing last brush to be called]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-06-01</date>
+				<rev-version>1.0.4</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[cdata on script, improved description and help, moved readme to contrib.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-07-31</date>
+				<rev-version>1.1.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[added a drop down menu for syntax selction.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-08-04</date>
+				<rev-version>1.1.2</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[re wrote the auto loader script to be less verbose. added regex script]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-08-09</date>
+				<rev-version>1.1.3</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[fixed problems with the coffescript,masm2 and powershgell brushes loading.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-10-07</date>
+				<rev-version>1.1.4</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[mod val suggestions. tweaked install.xml , also included minified versions of core scripts.]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-10-14</date>
+				<rev-version>1.1.5</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[upraged to xregexp 2.0 and higher if when needed. and various other fixes, see contrib changelog]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-10-14</date>
+				<rev-version>1.1.6</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[xregexp 3pre, fix for <br> tags. moved settings to core.js]]></change>
+				</changelog>
+			</entry>
+		</history>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/js/syntaxhighlighter3/js/*.*" to="js/syntaxhighlighter3/js/*.*"/>
+			<file from="root/js/syntaxhighlighter3/brushes/*.*" to="js/syntaxhighlighter3/brushes/*.*"/>
+			<file from="root/js/syntaxhighlighter3/styles/*.*" to="js/syntaxhighlighter3/styles/*.*"/>
+			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
+		</copy>
+		<open src="language/en/posting.php">
+			<edit>
+				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
+				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
+	'SYNTAX3'         => 'Select a Syntax',
+	'BBCODE40_ACTIONSCRIPT'      => 'as3',
+	'BBCODE40_ADA'   => 'ada',
+	'BBCODE40_ASSEMBLER_ASM'   => 'asm',
+	'BBCODE40_ASSEMBLER_NASM'   => 'nasm',
+	'BBCODE40_ASSEMBLER_MASM'   => 'masm',
+	'BBCODE40_APPLESCRIPT'   => 'applescript',
+	'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
+	'BBCODE40_BASH'   => 'bash',
+	'BBCODE40_BIFERNO'   => 'biferno',
+	'BBCODE40_SHELL'   => 'shell',
+	'BBCODE40_BATCH'   => 'batch',
+	'BBCODE40_CSHARP'   => 'csharp',
+	'BBCODE40_CPLUSPLUS'   => 'cpp',
+	'BBCODE40_CLOJURE'   => 'clojure',
+	'BBCODE40_CMD'   => 'cmd',
+	'BBCODE40_COCOA'   => 'objc',
+	'BBCODE40_COFFEE_SCRIPT'   => 'coffeescript',
+	'BBCODE40_COLDFUSION'   => 'coldfusion',
+	'BBCODE40_CSS'   => 'css',
+	'BBCODE40_D'   => 'd',
+	'BBCODE40_DELPHI'   => 'delphi',
+	'BBCODE40_DIFF'   => 'diff',
+	'BBCODE40_ERLANG'   => 'erlang',
+	'BBCODE40_FSHARP'   => 'fsharp',
+	'BBCODE40_GROOVY'   => 'groovy',
+	'BBCODE40_HAXE'   => 'haxe',
+	'BBCODE40_HTML'   => 'html',
+	'BBCODE40_JAVA'   => 'java',
+	'BBCODE40_JAVAFX'   => 'javafx',
+	'BBCODE40_JAVASCRIPT'   => 'javascript',
+	'BBCODE40_LASSO'   => 'lasso',
+	'BBCODE40_LATEX'   => 'latex',
+	'BBCODE40_LOGTALK'   => 'logtalk',
+	'BBCODE40_LSL'   => 'lsl',
+	'BBCODE40_LUA'   => 'lua',
+	'BBCODE40_MATHEMATIC'   => 'mathematica',
+	'BBCODE40_MATLAB'   => 'matlab',
+	'BBCODE40_OBJECTIVE_C'   => 'objc',
+	'BBCODE40_PASCAL'   => 'pascal',
+	'BBCODE40_PERL'   => 'perl',
+	'BBCODE40_PHP'   => 'php',
+	'BBCODE40_PLAIN_TEXT'   => 'plain',
+	'BBCODE40_POWERSHELL'   => 'powershell',
+	'BBCODE40_PROCESSING'   => 'processing',
+	'BBCODE40_PYTHON'   => 'python',
+	'BBCODE40_PYTHON3'   => 'python3',
+	'BBCODE40_ROUTEROS'   => 'ros',
+	'BBCODE40_RPG'   => 'rpg4',
+	'BBCODE40_ILE_RPG'   => 'rpgle',
+	'BBCODE40_RUBY'   => 'ruby',
+	'BBCODE40_SAHI'   => 'sahiscript',
+	'BBCODE40_SASS'   => 'sass',
+	'BBCODE40_SCALA'   => 'scala',
+	'BBCODE40_SQL'   => 'sql',
+	'BBCODE40_VISUAL_BASIC'   => 'vbnet',
+	'BBCODE40_YAML'   => 'yaml',
+	'BBCODE40_XHTML'   => 'xhtml',
+	'BBCODE40_XML'   => 'xml',
+	'BBCODE40_XSLT'   => 'xslt',
+// Begin syntaxhighlighter3]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_footer.html">
+			<edit>
+				<find><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></find>
+				<action type="replace-with"/>
+			</edit>
+			<edit>
+				<find><![CDATA[</body>]]></find>
+				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[<!-- Syntax Highlighter 3 -->
+
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shAutoloader.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></find>
+				<action type="replace-with"><![CDATA[<!-- Syntax Highlighter 3 -->
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
+<script type="text/javascript">
+// ]]>&lt;![CDATA[<![CDATA[
+XRegExp.install('natives');
+// ]]>]]&gt;<![CDATA[
+</script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/posting_buttons.html">
+			<edit>
+				<find><![CDATA[	<!-- IF S_BBCODE_FLASH -->
+		<input type="button" class="button2" accesskey="d" name="addbbcode18" value="Flash" onclick="bbstyle(18)" title="{L_BBCODE_D_HELP}" />
+	<!-- ENDIF -->]]></find>
+				<action type="after-add"><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
+
+<option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
+				<option value="{L_BBCODE40_ACTIONSCRIPT}">Actionscript</option>
+				<option value="{L_BBCODE40_ADA}">Ada</option>
+				<option value="{L_BBCODE40_ASSEMBLER_ASM}">Assembler ASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_NASM}">Assembler NASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_MASM}">Assembler MASM</option>
+				<option value="{L_BBCODE40_APPLESCRIPT}">Applescript</option>
+				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
+				<option value="{L_BBCODE40_BASH}">Bash</option>
+				<option value="{L_BBCODE40_BIFERNO}">Biferno</option>
+				<option value="{L_BBCODE40_SHELL}">Shell</option>
+				<option value="{L_BBCODE40_BATCH}">Batch</option>
+				<option value="{L_BBCODE40_CSHARP}">C#</option>
+				<option value="{L_BBCODE40_CPLUSPLUS}">C++</option>
+				<option value="{L_BBCODE40_CLOJURE}">Clojure</option>
+				<option value="{L_BBCODE40_CMD}">CMD</option>
+				<option value="{L_BBCODE40_COCOA}">Cocoa</option>
+				<option value="{L_BBCODE40_COFFEE_SCRIPT}">Coffee Script</option>
+				<option value="{L_BBCODE40_COLDFUSION}">Coldfusion</option>
+				<option value="{L_BBCODE40_CSS}">CSS</option>
+				<option value="{L_BBCODE40_D}">D</option>
+				<option value="{L_BBCODE40_DELPHI}">Delphi</option>
+				<option value="{L_BBCODE40_DIFF}">Diff</option>
+				<option value="{L_BBCODE40_ERLANG}">Erlang</option>
+				<option value="{L_BBCODE40_FSHARP}">F#</option>
+				<option value="{L_BBCODE40_GROOVY}">Groovy</option>
+				<option value="{L_BBCODE40_HAXE}">Haxe</option>
+				<option value="{L_BBCODE40_HTML}">html</option>
+				<option value="{L_BBCODE40_JAVA}">java</option>
+				<option value="{L_BBCODE40_JAVAFX}">java fx</option>
+				<option value="{L_BBCODE40_JAVASCRIPT}">javascript</option>
+				<option value="{L_BBCODE40_LASSO}">Lasso</option>
+				<option value="{L_BBCODE40_LATEX}">LaTeX</option>
+				<option value="{L_BBCODE40_LOGTALK}">LogTalk</option>
+				<option value="{L_BBCODE40_LSL}">LsL</option>
+				<option value="{L_BBCODE40_LUA}">Lua</option>
+				<option value="{L_BBCODE40_MATHEMATIC}">Mathmatic</option>
+				<option value="{L_BBCODE40_MATLAB}">Matlab</option>
+				<option value="{L_BBCODE40_OBJECTIVE_C}">Objective C</option>
+				<option value="{L_BBCODE40_PASCAL}">Pascal</option>
+				<option value="{L_BBCODE40_PERL}">Perl</option>
+				<option value="{L_BBCODE40_PHP}">PHP</option>
+				<option value="{L_BBCODE40_PLAIN_TEXT}">Plain Text</option>
+				<option value="{L_BBCODE40_POWERSHELL}">Powershell</option>
+				<option value="{L_BBCODE40_PROCESSING}">Processing</option>
+				<option value="{L_BBCODE40_PYTHON}">Python</option>
+				<option value="{L_BBCODE40_PYTHON3}">Python3</option>
+				<option value="{L_BBCODE40_ROUTEROS}">Router OS</option>
+				<option value="{L_BBCODE40_RPG}">RPG</option>
+				<option value="{L_BBCODE40_ILE_RPG}">ILE RPG</option>
+				<option value="{L_BBCODE40_RUBY}">Ruby</option>
+				<option value="{L_BBCODE40_SAHI}">Sahi</option>
+				<option value="{L_BBCODE40_SASS}">Sass</option>
+				<option value="{L_BBCODE40_SCALA}">Scala</option>
+				<option value="{L_BBCODE40_SQL}">SQL</option>
+				<option value="{L_BBCODE40_VISUAL_BASIC}">Visual Basic</option>
+				<option value="{L_BBCODE40_YAML}">Yaml</option>
+				<option value="{L_BBCODE40_XHTML}">xHTML</option>
+				<option value="{L_BBCODE40_XML}">XML</option>
+				<option value="{L_BBCODE40_XSLT}">XSLT</option>
+</select>]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
+
+!!! BUT you do NOT have to display it on the posting page since there will be a drop down menu. !!!
+
+USAGE
+
+[code2={SIMPLETEXT}]{TEXT}[/code2]
+
+HTML Replace
+
+<b>{SIMPLETEXT} code</b>
+<pre class="brush: {SIMPLETEXT}">
+{TEXT}
+</pre>
+
+HELPLINE
+
+[code2={required brush without brackets such as html}]some code[/code2] so it looks like [code2=html]<head></head>[/code2]
+
+USE THE DROP DOWN MENU 
+
+or if you want to use the bbcode 
+
+you need to specify a language for each calling of the bbcode by doing this [code2=html]some html code goes here[/code2] or [code2=php]some php code goes here [/code2]
+
+so when you call the bbcode you will get this [code2=][/code2]  what you do is put your codes between the tags then tell it what type of code is there by doing this [code2=html]some code[/code2]
+
+The Brushes are dynamically loaded according to what is called through the bbcodes, meaning the xml,html brush is only loaded if you someone loads a page that is using the [code2=html][/code2]  bbcode 
+
+Please see the contrib/syntax.txt for a detailed list of supported languages and usable aliases
+
+please visit the FAQ for this mod for other info and tweaks
+
+http://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/faq/
+
+all files included use the MIT / GPL v2 license]]></diy-instructions>
+	</action-group>
+</mod>
