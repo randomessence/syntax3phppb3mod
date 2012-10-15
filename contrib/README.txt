@@ -10,9 +10,11 @@ Updates Included.
 
 1.1.3 to 1.1.6
 
-`1.1.4 to 1.1.6`
+1.1.4 to 1.1.6
 
 Also included is a text file detialing the required edits to do this manually.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 Syntax Highlighter config:
 
@@ -75,11 +77,13 @@ Configuraton Options Start here:
 		
 Configuration Options End here.
 
+-------------------------------
+
 Languages:
 
 find them ( if avialable ) in the contrib/languages/ folder. use the install.xml for you language and replace the one that comes with the mod.
 
---------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------
 
 once the mod is installed you need to add a new bbcode
 
