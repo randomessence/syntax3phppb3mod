@@ -48,6 +48,8 @@ a = '"' was starting a multiline string, but it should not have [#112](https://g
 
 Modified keywords, strings, and value in Python brush [#155](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/155)
 
+custom fix for 2 phpbb 3 issues. the replacement of <br> and unindents/tabs [see this post](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/leading_tabs_in_lines_rendered_non_uniformly-t_101630)
+
 Biferno Brush [#66](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/66)
 dlan brush [#154](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/154)
 haze brush [#151](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/151)
