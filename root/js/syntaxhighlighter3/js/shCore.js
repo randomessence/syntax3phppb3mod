@@ -900,7 +900,7 @@ function processSmartTabs(code, tabSize)
  */
 function fixInputString(str)
 {
-	var br = /<br\s*\/?>|&lt;br\s*\/" ",?&gt;/gi;
+	var br = /<br\s*\/?>/gi;
 	
 	if (sh.config.bloggerMode == true)
 		str = str.replace(br, '\n');
