@@ -10,9 +10,15 @@ the 1.0.4 to 1.1.3 will apply the exact same edits as the version that was on ph
 
 1.0.4 to 1.1.6
 
+1.0.4 to 1.1.7
+
 1.1.3 to 1.1.6
 
+1.1.3 to 1.1.7
+
 1.1.4 to 1.1.6
+
+1.1.4 to 1.1.7
 
 Also included is a text file detialing the required edits to do this manually.
 
@@ -27,55 +33,55 @@ Please respect the /** DO NOT CHANGE */ comments.
 
 Configuraton Options Start here:
 
-		/** Additional CSS class names to be added to highlighter elements. */
-		'class-name' : '',
-		
-		/** First line number. */
-		'first-line' : 1,
-		
-		/**
-		 * Pads line numbers. Possible values are:
-		 *
-		 *   false - don't pad line numbers.
-		 *   true  - automaticaly pad numbers with minimum required number of leading zeroes.
-		 *   [int] - length up to which pad line numbers.
-		 */
-		'pad-line-numbers' : false,
-		
-		/** Lines to highlight. */
-		'highlight' : null,
-		
-		/** Title to be displayed above the code block. */
-		'title' : null,
-		
-		/** Enables or disables smart tabs. */
-		'smart-tabs' : true,
-		
-		/** Gets or sets tab size. */
-		'tab-size' : 4,
-		
-		/** Enables or disables gutter. */
-		'gutter' : true,
-		
-		/** Enables or disables toolbar. */
-		'toolbar' : true,
-		
-		/** Enables quick code copy and paste from double click. */
-		'quick-code' : true,
-		
-		/** Forces code view to be collapsed. */
-		'collapse' : false,
-		
-		/** Enables or disables automatic links. */
-		'auto-links' : true,
-		
-		/** Gets or sets light mode. Equavalent to turning off gutter and toolbar. */
-		'light' : false,
+/** Additional CSS class names to be added to highlighter elements. */
+'class-name' : '',
 
-		/** DO NOT CHANGE */
-		'unindent' : true,  
+/** First line number. */
+'first-line' : 1,
+
+/**
+* Pads line numbers. Possible values are:
+*
+*   false - don't pad line numbers.
+*   true  - automaticaly pad numbers with minimum required number of leading zeroes.
+*   [int] - length up to which pad line numbers.
+*/
+'pad-line-numbers' : false,
+
+/** Lines to highlight. */
+'highlight' : null,
+
+/** Title to be displayed above the code block. */
+'title' : null,
+
+/** Enables or disables smart tabs. */
+'smart-tabs' : true,
+
+/** Gets or sets tab size. */
+'tab-size' : 4,
 		
-		'html-script' : false
+/** Enables or disables gutter. */
+'gutter' : true,
+		
+/** Enables or disables toolbar. */
+'toolbar' : true,
+		
+/** Enables quick code copy and paste from double click. */
+'quick-code' : true,
+
+/** Forces code view to be collapsed. */
+'collapse' : false,
+		
+/** Enables or disables automatic links. */
+'auto-links' : true,
+		
+/** Gets or sets light mode. Equavalent to turning off gutter and toolbar. */
+'light' : false,
+
+/** DO NOT CHANGE */
+'unindent' : true,  
+		
+'html-script' : false
 		
 Configuration Options End here.
 
@@ -98,9 +104,7 @@ USAGE
 HTML Replace
 
 <b>{SIMPLETEXT} code</b>
-<pre class="brush: {SIMPLETEXT}">
-{TEXT}
-</pre>
+<pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
 
 HELPLINE
 
