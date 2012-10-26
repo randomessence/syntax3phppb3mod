@@ -7,8 +7,10 @@
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
 		<title lang="en"><![CDATA[SyntaxHighlighter3 1.1.3 to 1.1.7 UPDATE]]></title>
-		<description lang="en"><![CDATA[This will update you current 1.1.3 to 1.1.7]]></description>
-		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.]]></author-notes>
+		<description lang="en"><![CDATA[This will update your current 1.1.3 to 1.1.7]]></description>
+		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.
+
+Please use the github link in the authors URL for info.]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
@@ -320,7 +322,9 @@ XRegExp.install('natives');
 </select>]]></action>
 			</edit>
 		</open>
-		<diy-instructions lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
+		<diy-instructions lang="en"><![CDATA[!!! If you are updating you should also use the new bbcode  below replacing the old one.!!!
+
+once the mod is installed you need to add a new bbcode
 
 !!! BUT you do NOT have to display it on the posting page since there will be a drop down menu. !!!
 
