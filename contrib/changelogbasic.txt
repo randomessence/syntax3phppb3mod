@@ -29,3 +29,5 @@
 **15:** 1.1.5 updated to xregexp 2.0 using a snippet of js code. began process of manually adding in fixes and pull requests. Move all config options to the shCore.js. added some new brushes.
 
 **16:** 1.1.6 included various fixes and pull requests. All these are listed in the github description once they have been committed to the repo.
+
+**17**  1.1.7 added a simple way to change the theme by enetering the desired theme in a field in the acp under General/Board Features/

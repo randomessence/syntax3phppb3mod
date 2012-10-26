@@ -1,5 +1,5 @@
 /*!
- * XRegExp All 3.0.0-pr
+ * XRegExp-All 3.0.0-pre
  * <http://xregexp.com/>
  * Steven Levithan © 2012 MIT License
  */
@@ -488,8 +488,8 @@ var XRegExp = (function(undefined) {
         pattern = pattern === undefined ? '' : String(pattern);
         flags = flags === undefined ? '' : String(flags);
 
-        // Cache-lookup key
-        key = pattern + '/' + flags;
+        // Cache-lookup key; intentionally using an invalid regex sequence as the separator
+        key = pattern + '***' + flags;
 
         if (!patternCache[key]) {
             // Check for flag-related errors, and strip/apply flags in a leading mode modifier
@@ -646,7 +646,7 @@ var XRegExp = (function(undefined) {
  * }
  */
     self.cache = function(pattern, flags) {
-        var key = pattern + '/' + (flags || '');
+        var key = pattern + '***' + (flags || '');
         return cache[key] || (cache[key] = self(pattern, flags));
     };
 
@@ -1175,8 +1175,9 @@ var XRegExp = (function(undefined) {
 /**
  * Returns an XRegExp object that is the union of the given patterns. Patterns can be provided as
  * regex objects or strings. Metacharacters are escaped in patterns provided as strings.
- * Backreferences in provided regex objects are automatically renumbered to work correctly. Native
- * flags used by provided regexes are ignored in favor of the `flags` argument.
+ * Backreferences in provided regex objects are automatically renumbered to work correctly within
+ * the larger combined pattern. Native flags used by provided regexes are ignored in favor of the
+ * `flags` argument.
  * @memberOf XRegExp
  * @param {Array} patterns Regexes and strings to combine.
  * @param {String} [flags] Any combination of XRegExp flags.
