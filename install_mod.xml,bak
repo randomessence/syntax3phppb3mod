@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.7]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.6]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 42 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
@@ -16,7 +16,7 @@
 				<username><![CDATA[randomessence]]></username>
 			</author>
 		</author-group>
-		<mod-version>1.1.7</mod-version>
+		<mod-version>1.1.6</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -102,35 +102,15 @@
 					<change><![CDATA[xregexp 3pre, fix for end of line tags. moved settings to core.js]]></change>
 				</changelog>
 			</entry>
-			<entry>
-				<date>2012-10-25</date>
-				<rev-version>1.1.7</rev-version>
-				<changelog lang="en">
-					<change><![CDATA[added a simple method to change theme from the acp]]></change>
-				</changelog>
-			</entry>
 		</history>
 	</header>
 	<action-group>
-		<sql><![CDATA[INSERT IGNORE INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES('syh3_theme', 'Eclipse', 0);]]></sql>
 		<copy>
 			<file from="root/js/syntaxhighlighter3/js/*.*" to="js/syntaxhighlighter3/js/*.*"/>
 			<file from="root/js/syntaxhighlighter3/brushes/*.*" to="js/syntaxhighlighter3/brushes/*.*"/>
 			<file from="root/js/syntaxhighlighter3/styles/*.*" to="js/syntaxhighlighter3/styles/*.*"/>
 			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
 		</copy>
-		<open src="includes/functions.php">
-			<edit>
-				<find><![CDATA[		'SITENAME'						=> $config['sitename'],]]></find>
-				<action type="before-add"><![CDATA[		'SYH3_THEME'					=> $config['syh3_theme'],]]></action>
-			</edit>
-		</open>
-		<open src="includes/acp/acp_board.php">
-			<edit>
-				<find><![CDATA[						'legend2'				=> 'ACP_LOAD_SETTINGS',]]></find>
-				<action type="before-add"><![CDATA[		'syh3_theme'					=> array('lang' => 'SYH3_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
-			</edit>
-		</open>
 		<open src="language/en/posting.php">
 			<edit>
 				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
@@ -198,15 +178,6 @@
 // Begin syntaxhighlighter3]]></action>
 			</edit>
 		</open>
-		<open src="language/en/acp/board.php">
-			<edit>
-				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
-				<action type="after-add"><![CDATA[// Syntax Highlighter 3 Themes
-	'SYH3_THEME_NAME'				=> 'SyntaxHighlighter3 Themes',
-	'SYH3_THEME_NAME_EXPLAIN'		=> 'To change the theme to one of the included themes you need to specify the theme name here. A theme name is the name of the code and default css file. So for shCoreMDUltra.css and shThemeMDUltra.css we enter simply: MDUltra .',
-// End Syntax Highlighter 3 Themes]]></action>
-			</edit>
-		</open>
 		<open src="styles/prosilver/template/overall_footer.html">
 			<edit>
 				<find><![CDATA[</body>]]></find>
@@ -224,8 +195,8 @@ XRegExp.install('natives');
 // ]]>]]&gt;<![CDATA[
 </script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
-<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCore{SYH3_THEME}.css" rel="stylesheet" type="text/css" />
-<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shTheme{SYH3_THEME}.css" rel="stylesheet" type="text/css" />]]></action>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></action>
 			</edit>
 		</open>
 		<open src="styles/prosilver/template/posting_buttons.html">
@@ -309,7 +280,9 @@ USAGE
 HTML Replace
 
 <b>{SIMPLETEXT} code</b>
-<pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
+<pre class="brush: {SIMPLETEXT}">
+{TEXT}
+</pre>
 
 HELPLINE
 
