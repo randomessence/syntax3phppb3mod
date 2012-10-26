@@ -20,8 +20,6 @@ the 1.0.4 to 1.1.3 will apply the exact same edits as the version that was on ph
 
 1.1.4 to 1.1.7
 
-Also included is a text file detialing the required edits to do this manually.
-
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 Syntax Highlighter config:
