@@ -30,4 +30,4 @@
 
 **16:** 1.1.6 included various fixes and pull requests. All these are listed in the github description once they have been committed to the repo.
 
-**17**  1.1.7 added a simple way to change the theme by enetering the desired theme in a field in the acp under General/Board Features/ and sql multi line fix
+**17**  1.1.7 added a simple way to change the theme by entering the desired theme in a field in the acp under General/Board Features/ and sql multi line fix
