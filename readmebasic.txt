@@ -1,16 +1,18 @@
 **Hello World**
 
-Current Version : 1.1.6
+This is a phpbb 3 mod that uses [Syntax Highlighter 3](https://github.com/alexgorbatchev/SyntaxHighlighter)
+
+Current Version : 1.1.7
 
 phpbb.com version : [1.1.3](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sid_5e1d796a9d476069b6507f61b64c34a5)
 
-![alt text](https://raw.github.com/randomessence/syntax3phppb3mod/master/contrib/example.png "Example")
+![alt text](https://raw.github.com/randomessence/syntax3phppb3mod/master/contrib/images/example0.png "Example")
 
-This is a phpbb 3 mod that uses [Syntax Highlighter 3](https://github.com/alexgorbatchev/SyntaxHighlighter)
+![alt text](https://raw.github.com/randomessence/syntax3phppb3mod/master/contrib/images/example.png "Example")
 
 It has been extended a bit over the original 3.0.83 from the [website](http://alexgorbatchev.com/SyntaxHighlighter/) since it uses the files from the github repo as well as some select and applied fixes.
 
-To summarise the mod. This is a phpbb3 3.0.11 compatible mod that makes 4 small edits when installed via automod or if done manually. 
+To summarise the mod. This is a phpbb3 3.0.11 compatible mod that makes 7 small edits when installed via automod or if done manually. 
 
 **Edit 1:** Syntax Highlighter 3 `shCore.js`, themes `shThemeEclipse.css` & `shCoreEclipse.css` and `xregexp.js` (3.0 Pre) are loaded into the `overall_header.html` of **Prosilver** and then any style the mod is applied to via automod.
 
@@ -21,9 +23,35 @@ To summarise the mod. This is a phpbb3 3.0.11 compatible mod that makes 4 small 
 **Edit 4:** `styles/prosilver/template/posting_buttons.html` is edited to add a custom drop down menu to the post editor that will automatically insert a pre-formatted bbcode with the chosen syntax into the user's post. 
 The cursor will automatically be in-between the code blocks ready to paste your code. It also works to highlight any code you want prettified and then select the relevant syntax from the drop down menu.
 
+**Edit 5** `includes/functions.php` very simple datbase function
+
+**Edit 6**  `includes/acp/acp_board.php` add an explained entry field to the board features page that uses the DB function created.
+
+![alt text](https://raw.github.com/randomessence/syntax3phppb3mod/master/contrib/images/acp.png "acp")
+
+
+**Edit 7** `language/en/acp/board.php` adds the wording  used in the acp.
+
 **Notes:** 
 
-Adding a custom bbcode is required to complete the installation of this mod. see DIY instructions or check the readme in the conrib folder.
+Adding a custom bbcode is required to complete the installation of this mod.
+
+**USAGE**
+
+`[code2={SIMPLETEXT}]{TEXT}[/code2]`
+
+**HTML Replace**
+
+```
+<b>{SIMPLETEXT} code</b>
+<pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
+```
+
+**HELPLINE**
+
+```
+[code2={required brush without brackets such as html}]some code[/code2] so it looks like [code2=html]<head></head>[/code2]
+```
 
 The mod does not install to non Default (EN) langauage packs. you will have to manually edit the `language/**/posting.php` of your default lanaguage pack and apply the edits.
 
@@ -48,7 +76,10 @@ a = '"' was starting a multiline string, but it should not have [#112](https://g
 
 Modified keywords, strings, and value in Python brush [#155](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/155)
 
+multiline comments for SQL [#156](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/156)
+
 custom fix for 2 phpbb 3 issues. the replacement of <br> and unindents/tabs [see this post](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/leading_tabs_in_lines_rendered_non_uniformly-t_101630)
+
 
 Biferno Brush [#66](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/66)
 dlan brush [#154](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/154)
