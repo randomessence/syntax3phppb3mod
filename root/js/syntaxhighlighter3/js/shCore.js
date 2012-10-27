@@ -75,7 +75,7 @@ var sh = {
 		bloggerMode : true,
 		
 		/** DO NOT CHANGE */		
-		stripBrs : true,
+		stripBrs : false,
 		
 		/** Name of the tag that SyntaxHighlighter will automatically look for. */
 		tagName : 'pre',
