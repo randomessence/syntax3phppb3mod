@@ -124,7 +124,6 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		</history>
 		<link-group>
 			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">subsilver2</link>
-			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
 		</link-group>
 	</header>
 	<action-group>
@@ -153,7 +152,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 				<action type="before-add"><![CDATA[		'syh3_theme'					=> array('lang' => 'SYH3_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
 			</edit>
 		</open>
-		<open src="language/en/posting.php">
+		<open src="language/en_us/posting.php">
 			<edit>
 				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
 				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
@@ -220,7 +219,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 // Begin syntaxhighlighter3]]></action>
 			</edit>
 		</open>
-		<open src="language/en/acp/board.php">
+		<open src="language/en_us/acp/board.php">
 			<edit>
 				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
 				<action type="after-add"><![CDATA[// Syntax Highlighter 3 Themes
