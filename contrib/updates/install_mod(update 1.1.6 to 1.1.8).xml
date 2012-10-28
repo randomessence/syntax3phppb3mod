@@ -21,6 +21,10 @@
 			<time>120</time>
 			<target-version>3.0.11</target-version>
 		</installation>
+		<link-group>
+			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">subsilver2</link>
+			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
+		</link-group>
 	</header>
 	<action-group>
 		<copy>
