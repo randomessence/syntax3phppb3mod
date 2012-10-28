@@ -139,7 +139,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		<open src="styles/prosilver/template/overall_footer.html">
 			<edit>
 				<find><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></find>
-				<action type="replace-with"/>
+				<action type="replace-with"><![CDATA[<!-- SyntaxHL 1.1.8 moved -->]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[</body>]]></find>
