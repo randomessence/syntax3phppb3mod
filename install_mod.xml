@@ -150,7 +150,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		<open src="includes/acp/acp_board.php">
 			<edit>
 				<find><![CDATA[						'legend2'				=> 'ACP_LOAD_SETTINGS',]]></find>
-				<action type="before-add"><![CDATA[		'syh3_theme'					=> array('lang' => 'SYH3_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
+				<action type="before-add"><![CDATA[						'syh3_theme'			=> array('lang' => 'SYH3_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
 			</edit>
 		</open>
 		<open src="language/en/posting.php">
