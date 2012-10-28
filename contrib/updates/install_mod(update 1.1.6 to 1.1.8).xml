@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[SyntaxHighlighter3 1.1.6 to 1.1.8 UPDATE]]></title>
+		<description lang="en"><![CDATA[This will update you current 1.1.6 to 1.1.8]]></description>
+		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.]]></author-notes>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[https://github.com/randomessence/syntax3phppb3mod]]></homepage>
+			</author>
+		</author-group>
+		<mod-version>1.1.8</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.11</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/js/syntaxhighlighter3/js/*.*" to="js/syntaxhighlighter3/js/*.*"/>
+			<file from="root/js/syntaxhighlighter3/brushes/*.*" to="js/syntaxhighlighter3/brushes/*.*"/>
+			<file from="root/js/syntaxhighlighter3/styles/*.*" to="js/syntaxhighlighter3/styles/*.*"/>
+			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
+		</copy>
+		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[	// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
+				<action type="before-add"><![CDATA[	if (empty($config['syh3_theme'])) 
+	{
+	set_config('syh3_theme', 'Emacs', false);
+	}]]></action>
+			</edit>
+			<edit>
+				<find><![CDATA[		'SITENAME'						=> $config['sitename'],]]></find>
+				<action type="before-add"><![CDATA[		'SYH3_THEME'					=> $config['syh3_theme'],]]></action>
+			</edit>
+		</open>
+		<open src="includes/acp/acp_board.php">
+			<edit>
+				<find><![CDATA[						'legend2'				=> 'ACP_LOAD_SETTINGS',]]></find>
+				<action type="before-add"><![CDATA[		'syh3_theme'					=> array('lang' => 'SYH3_THEME_NAME',		'validate' => 'string',	'type' => 'text:40:255', 'explain' => true),]]></action>
+			</edit>
+		</open>
+		<open src="language/en/acp/board.php">
+			<edit>
+				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
+				<action type="after-add"><![CDATA[// Syntax Highlighter 3 Themes
+	'SYH3_THEME_NAME'				=> 'SyntaxHighlighter3 Themes',
+	'SYH3_THEME_NAME_EXPLAIN'		=> 'To change the theme to one of the included themes you need to specify the theme name here. A theme name is the name of the code and default css file. So for shCoreMDUltra.css and shThemeMDUltra.css we enter simply: MDUltra .',
+// End Syntax Highlighter 3 Themes]]></action>
+			</edit>
+		</open>
+		<open src="styles/prosilver/template/overall_header.html">
+			<edit>
+				<find><![CDATA[<!-- Syntax Highlighter 3 -->
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
+<script type="text/javascript">
+// ]]>&lt;![CDATA[<![CDATA[
+XRegExp.install('natives');
+// ]]>]]&gt;<![CDATA[
+</script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></find>
+				<action type="replace-with"><![CDATA[<!-- Syntax Highlighter 3 -->
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
+<script type="text/javascript">
+// ]]>&lt;![CDATA[<![CDATA[
+XRegExp.install('natives');
+// ]]>]]&gt;<![CDATA[
+</script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCore{SYH3_THEME}.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shTheme{SYH3_THEME}.css" rel="stylesheet" type="text/css" />]]></action>
+			</edit>
+		</open>
+		<diy-instructions lang="en"><![CDATA[once the mod is installed you need to add a new bbcode
+
+!!! BUT you do NOT have to display it on the posting page since there will be a drop down menu. !!!
+
+USAGE
+
+[code2={SIMPLETEXT}]{TEXT}[/code2]
+
+HTML Replace
+
+<b>{SIMPLETEXT} code</b>
+<pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
+
+HELPLINE
+
+[code2={required brush without brackets such as html}]some code[/code2] so it looks like [code2=html]<head></head>[/code2]
+
+USE THE DROP DOWN MENU 
+
+or if you want to use the bbcode 
+
+you need to specify a language for each calling of the bbcode by doing this [code2=html]some html code goes here[/code2] or [code2=php]some php code goes here [/code2]
+
+so when you call the bbcode you will get this [code2=][/code2]  what you do is put your codes between the tags then tell it what type of code is there by doing this [code2=html]some code[/code2]
+
+The Brushes are dynamically loaded according to what is called through the bbcodes, meaning the xml,html brush is only loaded if you someone loads a page that is using the [code2=html][/code2]  bbcode 
+
+Please see the contrib/syntax.txt for a detailed list of supported languages and usable aliases
+
+please visit the FAQ for this mod for other info and tweaks
+
+http://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/faq/
+
+all files included use the MIT / GPL v2 license]]></diy-instructions>
+	</action-group>
+</mod>
