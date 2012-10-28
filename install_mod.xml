@@ -6,17 +6,22 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.7]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.8]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
-42 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
-		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.]]></author-notes>
+49 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
+		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.
+
+Please direct all support issues to :
+
+https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/]]></author-notes>
 		<author-group>
 			<author>
 				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[https://github.com/randomessence/syntax3phppb3mod]]></homepage>
 			</author>
 		</author-group>
-		<mod-version>1.1.7</mod-version>
+		<mod-version>1.1.8</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -106,7 +111,14 @@
 				<date>2012-10-25</date>
 				<rev-version>1.1.7</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[added a simple method to change theme from the acp]]></change>
+					<change><![CDATA[Full subsilver2 support and improved acp method]]></change>
+				</changelog>
+			</entry>
+			<entry>
+				<date>2012-10-27</date>
+				<rev-version>1.1.8</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[improved acp method to use just php and no sql query]]></change>
 				</changelog>
 			</entry>
 		</history>
@@ -115,7 +127,6 @@
 		</link-group>
 	</header>
 	<action-group>
-		<sql><![CDATA[INSERT IGNORE INTO `phpbb_config` (`config_name`, `config_value`, `is_dynamic`) VALUES('syh3_theme', 'Eclipse', 0);]]></sql>
 		<copy>
 			<file from="root/js/syntaxhighlighter3/js/*.*" to="js/syntaxhighlighter3/js/*.*"/>
 			<file from="root/js/syntaxhighlighter3/brushes/*.*" to="js/syntaxhighlighter3/brushes/*.*"/>
@@ -123,6 +134,13 @@
 			<file from="root/styles/prosilver/template/syntaxhighlighter3/*.*" to="styles/prosilver/template/syntaxhighlighter3/*.*"/>
 		</copy>
 		<open src="includes/functions.php">
+			<edit>
+				<find><![CDATA[	// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
+				<action type="before-add"><![CDATA[	if (empty($config['syh3_theme'])) 
+	{
+	set_config('syh3_theme', 'Emacs', false);
+	}]]></action>
+			</edit>
 			<edit>
 				<find><![CDATA[		'SITENAME'						=> $config['sitename'],]]></find>
 				<action type="before-add"><![CDATA[		'SYH3_THEME'					=> $config['syh3_theme'],]]></action>
