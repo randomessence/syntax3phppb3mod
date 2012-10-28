@@ -9,7 +9,7 @@
 		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.8]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
-42 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
+49 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
 		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.
 
 Please direct all support issues to :

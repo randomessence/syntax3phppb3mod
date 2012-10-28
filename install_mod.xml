@@ -118,7 +118,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 				<date>2012-10-27</date>
 				<rev-version>1.1.8</rev-version>
 				<changelog lang="en">
-					<change><![CDATA[improved acp method to use just php and no sql query]]></change>
+					<change><![CDATA[improved acp method sql query,full subsilver2 support, en_us]]></change>
 				</changelog>
 			</entry>
 		</history>
