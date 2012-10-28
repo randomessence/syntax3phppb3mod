@@ -46,7 +46,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 				<find><![CDATA[	// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
 				<action type="before-add"><![CDATA[	if (empty($config['syh3_theme'])) 
 	{
-	set_config('syh3_theme', 'Emacs', false);
+	set_config('syh3_theme', 'Default', false);
 	}]]></action>
 			</edit>
 			<edit>
@@ -347,6 +347,10 @@ HTML Replace
 <b>{SIMPLETEXT} code</b>
 <pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
 
+or with no Bold Heading just use
+
+<pre class="brush: {SIMPLETEXT}">{TEXT}</pre>
+
 HELPLINE
 
 [code2={required brush without brackets such as html}]some code[/code2] so it looks like [code2=html]<head></head>[/code2]
@@ -360,8 +364,6 @@ you need to specify a language for each calling of the bbcode by doing this [cod
 so when you call the bbcode you will get this [code2=][/code2]  what you do is put your codes between the tags then tell it what type of code is there by doing this [code2=html]some code[/code2]
 
 The Brushes are dynamically loaded according to what is called through the bbcodes, meaning the xml,html brush is only loaded if you someone loads a page that is using the [code2=html][/code2]  bbcode 
-
-Please see the contrib/syntax.txt for a detailed list of supported languages and usable aliases
 
 please visit the FAQ for this mod for other info and tweaks
 
