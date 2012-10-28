@@ -31,3 +31,5 @@
 **16:** 1.1.6 included various fixes and pull requests. All these are listed in the github description once they have been committed to the repo.
 
 **17**  1.1.7 added a simple way to change the theme by entering the desired theme in a field in the acp under General/Board Features/ and sql multi line fix
+
+**18** 	1.1.8 Improved acp theme switcher to be pure php. Sets a default value if none if present but respects manually seleceted themes. Full subsilver2 and subsilver2 based styles support. Tweaked Info materials and links.
