@@ -44,7 +44,7 @@ The mod does not install to non Default (EN) langauage packs. you will have to m
 The edit to the `styles/prosilver/template/posting_buttons.html` works with template inheritence styles. if you style does not inhrerit from Prosliver and does not have a `posting_buttons.html`
 you will have to figure out which files you do need to edit.
 
-**Manually applied fixes**
+##Manually applied fixes
 
 [xregexp 3 pre](https://github.com/slevithan/xregexp) using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
 
