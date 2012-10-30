@@ -42,10 +42,12 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		<open src="includes/functions.php">
 			<edit>
 				<find><![CDATA[	// The following assigns all _common_ variables that may be used at any point in a template.]]></find>
-				<action type="before-add"><![CDATA[	if (empty($config['syh3_theme'])) 
+				<action type="before-add"><![CDATA[// START SyntaxHighlighter 3
+	if (empty($config['syh3_theme'])) 
 	{
 	set_config('syh3_theme', 'Default', false);
-	}]]></action>
+	}
+// END 	SyntaxHighlighter 3]]></action>
 			</edit>
 			<edit>
 				<find><![CDATA[		'SITENAME'						=> $config['sitename'],]]></find>
