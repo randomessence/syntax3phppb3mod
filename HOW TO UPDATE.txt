@@ -1,0 +1,43 @@
+i do not support the ftp to store/mods/mods name method with this mod.
+
+It can be done but it is a bad method and it breaks the mod for any extra prosilveR based style it
+applied to (1.0.4 & 1.1.3)
+
+
+
+RECOMMENDED WAY TO UPDATE (Stand alone)
+
+In the same folder as this readme is the core install file named
+
+install_mod(1.1.8).xml
+
+delete this file and all files up to your required update file
+
+you can delete them all except teh one you want also.
+
+once you have the right file elft, for example
+
+install_mod(update 1.1.3 to 1.1.8).xml
+
+
+re ZIP the mod and then upload it as a stand alone mod.
+
+Install this stand alone as a new mod.
+
+Apply to any styles as needed (will update any prosilver based styles)
+
+
+REASONS?
+
+Easily updates previous mods with new features
+
+Properly edits subsilver on install
+
+Applies proper updates to extra styles already with the older mod
+
+Can be totally removed via automod reverting the updated mod to its previous state
+
+This older mod can then be removed properly via automod.
+
+much cleaner process overall.
+
