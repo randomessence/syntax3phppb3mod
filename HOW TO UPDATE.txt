@@ -13,9 +13,9 @@ install_mod(1.1.8).xml
 
 delete this file and all files up to your required update file
 
-you can delete them all except teh one you want also.
+you can delete them all except the one you want also.
 
-once you have the right file elft, for example
+once you have the only the file you want left, for example
 
 install_mod(update 1.1.3 to 1.1.8).xml
 
@@ -25,7 +25,6 @@ re ZIP the mod and then upload it as a stand alone mod.
 Install this stand alone as a new mod.
 
 Apply to any styles as needed (will update any prosilver based styles)
-
 
 REASONS?
 
