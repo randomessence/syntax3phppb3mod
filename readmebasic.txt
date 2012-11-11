@@ -44,7 +44,7 @@ The mod does not install to non Default (EN) langauage packs. you will have to m
 The edit to the `styles/prosilver/template/posting_buttons.html` works with template inheritence styles. if you style does not inhrerit from Prosliver and does not have a `posting_buttons.html`
 you will have to figure out which files you do need to edit.
 
-**Manually applied fixes**
+##Manually applied fixes
 
 [xregexp 3 pre](https://github.com/slevithan/xregexp) using a snippet of javascript as detailed here [#127](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/127#issuecomment-6405277)
 
@@ -56,7 +56,7 @@ shAutoloader.js duplicate loading and html-script support [#139](https://github.
 
 (Java multiline comment greedy Regexp) [#150](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/150)
 
-fix stripCData('ab')=='' [#153](http://https://github.com/alexgorbatchev/SyntaxHighlighter/pull/153)
+fix stripCData('ab')=='' [#153](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/153)
 
 a = '"' was starting a multiline string, but it should not have [#112](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/112/files)
 
@@ -65,6 +65,12 @@ Modified keywords, strings, and value in Python brush [#155](https://github.com/
 multiline comments for SQL [#156](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/156)
 
 Add missing C++11 keywords [#158](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/158)
+
+PHP brush updated functions, keywords, constants & variable [#159](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/159)
+
+Perl Fix syntax highlighting for adjacent pod blocks [#163](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/163)
+
+Perl Correctly highlight dereferenced vars (double sigils) [#164](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/164)
 
 custom fix for 2 phpbb 3 issues. the replacement of <br> and unindents/tabs [see this post](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/leading_tabs_in_lines_rendered_non_uniformly-t_101630)
 
