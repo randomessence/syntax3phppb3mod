@@ -28,8 +28,8 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>
-			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">contrib/subsilver2/subsilver2.xml</link>
-			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
+			<link type="template" href="subsilver2.xml" lang="en">subsilver2.xml</link>
+			<link type="language" href="en_us.xml" lang="en">en_us.xml</link>
 		</link-group>
 	</header>
 	<action-group>

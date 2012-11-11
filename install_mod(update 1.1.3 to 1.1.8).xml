@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[SyntaxHighlighter3 1.0.4 to 1.1.8 UPDATE]]></title>
+		<title lang="en"><![CDATA[SyntaxHighlighter3 1.1.3 to 1.1.8 UPDATE]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 49 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .
@@ -30,8 +30,8 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 			<target-version>3.0.11</target-version>
 		</installation>
 		<link-group>
-			<link type="template" href="contrib/subsilver2/subsilver2.xml" lang="en">subsilver2.xml</link>
-			<link type="language" href="contrib/languages/en_us.xml" lang="en">en_us</link>
+			<link type="template" href="subsilver2.xml" lang="en">subsilver2.xml</link>
+			<link type="language" href="en_us.xml" lang="en">en_us.xml</link>
 		</link-group>
 	</header>
 	<action-group>
@@ -64,8 +64,66 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		</open>
 		<open src="language/en/posting.php">
 			<edit>
-				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
-				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
+				<find><![CDATA[/** Begin syntaxhighlighter3 */
+           
+	'SYNTAX3'         => 'Select a Syntax',
+    'BBCODE40_ACTIONSCRIPT'      => 'as3',
+    'BBCODE40_ADA'   => 'ada',
+    'BBCODE40_ASSEMBLER_ASM'   => 'asm',
+    'BBCODE40_ASSEMBLER_NASM'   => 'nasm',
+    'BBCODE40_ASSEMBLER_MASM'   => 'masm',
+    'BBCODE40_APPLESCRIPT'   => 'applescript',
+    'BBCODE40_AUTOHOTKEY'   => 'autohotkey',
+    'BBCODE40_BASH'   => 'bash',
+	'BBCODE40_SHELL'   => 'shell',
+	'BBCODE40_BATCH'   => 'batch',
+	'BBCODE40_CSHARP'   => 'csharp',
+	'BBCODE40_CPLUSPLUS'   => 'cpp',
+	'BBCODE40_CLOJURE'   => 'clojure',
+	'BBCODE40_CMD'   => 'cmd',
+	'BBCODE40_COCOA'   => 'objc',
+	'BBCODE40_COFFEE_SCRIPT'   => 'coffeescript',
+	'BBCODE40_COLDFUSION'   => 'coldfusion',
+	'BBCODE40_CSS'   => 'css',
+	'BBCODE40_DELPHI'   => 'delphi',
+	'BBCODE40_DIFF'   => 'diff',
+	'BBCODE40_ERLANG'   => 'erlang',
+	'BBCODE40_FSHARP'   => 'fsharp',
+	'BBCODE40_GROOVY'   => 'groovy',
+	'BBCODE40_HTML'   => 'html',
+	'BBCODE40_JAVA'   => 'java',
+	'BBCODE40_JAVAFX'   => 'javafx',
+	'BBCODE40_JAVASCRIPT'   => 'javascript',
+	'BBCODE40_LATEX'   => 'latex',
+	'BBCODE40_LSL'   => 'lsl',
+	'BBCODE40_LUA'   => 'lua',
+	'BBCODE40_MATHEMATIC'   => 'mathematica',
+	'BBCODE40_MATLAB'   => 'matlab',
+	'BBCODE40_OBJECTIVE_C'   => 'objc',
+	'BBCODE40_PASCAL'   => 'pascal',
+	'BBCODE40_PERL'   => 'perl',
+	'BBCODE40_PHP'   => 'php',
+	'BBCODE40_PLAIN_TEXT'   => 'plain',
+	'BBCODE40_POWERSHELL'   => 'powershell',
+	'BBCODE40_PROCESSING'   => 'processing',
+	'BBCODE40_PYTHON'   => 'python',
+	'BBCODE40_ROUTEROS'   => 'ros',
+	'BBCODE40_RPG'   => 'rpg4',
+	'BBCODE40_ILE_RPG'   => 'rpgle',
+	'BBCODE40_RUBY'   => 'ruby',
+	'BBCODE40_SAHI'   => 'sahiscript',
+	'BBCODE40_SASS'   => 'sass',
+	'BBCODE40_SCALA'   => 'scala',
+	'BBCODE40_SQL'   => 'sql',
+	'BBCODE40_VISUAL_BASIC'   => 'vbnet',
+	'BBCODE40_YAML'   => 'yaml',
+	'BBCODE40_XHTML'   => 'xhtml',
+	'BBCODE40_XML'   => 'xml',
+	'BBCODE40_XSLT'   => 'xslt',
+		   
+
+/** End syntaxhighlighter3 */]]></find>
+				<action type="replace-with"><![CDATA[// Begin syntaxhighlighter3
 	'SYNTAX3'         => 'Select a Syntax',
 	'BBCODE40_ACTIONSCRIPT'      => 'as3',
 	'BBCODE40_ADA'   => 'ada',
@@ -138,22 +196,11 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 // End Syntax Highlighter 3 Themes]]></action>
 			</edit>
 		</open>
-		<open src="styles/prosilver/template/overall_footer.html">
-			<edit>
-				<find><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></find>
-				<action type="replace-with"><![CDATA[<!-- SyntaxHL 1.1.8 moved -->]]></action>
-			</edit>
-			<edit>
-				<find><![CDATA[</body>]]></find>
-				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
-			</edit>
-		</open>
 		<open src="styles/prosilver/template/overall_header.html">
 			<edit>
 				<find><![CDATA[<!-- Syntax Highlighter 3 -->
-
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/XRegExp.js"></script>
 <script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
-<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shAutoloader.js"></script>
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCoreEclipse.css" rel="stylesheet" type="text/css" />
 <link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shThemeEclipse.css" rel="stylesheet" type="text/css" />]]></find>
 				<action type="replace-with"><![CDATA[<!-- Syntax Highlighter 3 -->
@@ -170,10 +217,65 @@ XRegExp.install('natives');
 		</open>
 		<open src="styles/prosilver/template/posting_buttons.html">
 			<edit>
-				<find><![CDATA[	<!-- IF S_BBCODE_FLASH -->
-		<input type="button" class="button2" accesskey="d" name="addbbcode18" value="Flash" onclick="bbstyle(18)" title="{L_BBCODE_D_HELP}" />
-	<!-- ENDIF -->]]></find>
-				<action type="after-add"><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
+				<find><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
+
+	<option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
+				<option value="{L_BBCODE40_ACTIONSCRIPT}">Actionscript</option>
+				<option value="{L_BBCODE40_ADA}">Ada</option>
+				<option value="{L_BBCODE40_ASSEMBLER_ASM}">Assembler ASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_NASM}">Assembler NASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_MASM}">Assembler MASM</option>
+				<option value="{L_BBCODE40_APPLESCRIPT}">Applescript</option>
+				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
+				<option value="{L_BBCODE40_BASH}">Bash</option>
+				<option value="{L_BBCODE40_SHELL}">Shell</option>
+				<option value="{L_BBCODE40_BATCH}">Batch</option>
+				<option value="{L_BBCODE40_CSHARP}">C#</option>
+				<option value="{L_BBCODE40_CPLUSPLUS}">C++</option>
+				<option value="{L_BBCODE40_CLOJURE}">Clojure</option>
+				<option value="{L_BBCODE40_CMD}">CMD</option>
+				<option value="{L_BBCODE40_COCOA}">Cocoa</option>
+				<option value="{L_BBCODE40_COFFEE_SCRIPT}">Coffee Script</option>
+				<option value="{L_BBCODE40_COLDFUSION}">Coldfusion</option>
+				<option value="{L_BBCODE40_CSS}">CSS</option>
+				<option value="{L_BBCODE40_DELPHI}">Delphi</option>
+				<option value="{L_BBCODE40_DIFF}">Diff</option>
+				<option value="{L_BBCODE40_ERLANG}">Erlang</option>
+				<option value="{L_BBCODE40_FSHARP}">F#</option>
+				<option value="{L_BBCODE40_GROOVY}">Groovy</option>
+				<option value="{L_BBCODE40_HTML}">html</option>
+				<option value="{L_BBCODE40_JAVA}">java</option>
+				<option value="{L_BBCODE40_JAVAFX}">java fx</option>
+				<option value="{L_BBCODE40_JAVASCRIPT}">javascript</option>
+				<option value="{L_BBCODE40_LATEX}">LaTeX</option>
+				<option value="{L_BBCODE40_LSL}">LsL</option>
+				<option value="{L_BBCODE40_LUA}">Lua</option>
+				<option value="{L_BBCODE40_MATHEMATIC}">Mathmatic</option>
+				<option value="{L_BBCODE40_MATLAB}">Matlab</option>
+				<option value="{L_BBCODE40_OBJECTIVE_C}">Objective C</option>
+				<option value="{L_BBCODE40_PASCAL}">Pascal</option>
+				<option value="{L_BBCODE40_PERL}">Perl</option>
+				<option value="{L_BBCODE40_PHP}">PHP</option>
+				<option value="{L_BBCODE40_PLAIN_TEXT}">Plain Text</option>
+				<option value="{L_BBCODE40_POWERSHELL}">Powershell</option>
+				<option value="{L_BBCODE40_PROCESSING}">Processing</option>
+				<option value="{L_BBCODE40_PYTHON}">Python</option>
+				<option value="{L_BBCODE40_ROUTEROS}">Router OS</option>
+				<option value="{L_BBCODE40_RPG}">RPG</option>
+				<option value="{L_BBCODE40_ILE_RPG}">ILE RPG</option>
+				<option value="{L_BBCODE40_RUBY}">Ruby</option>
+				<option value="{L_BBCODE40_SAHI}">Sahi</option>
+				<option value="{L_BBCODE40_SASS}">Sass</option>
+				<option value="{L_BBCODE40_SCALA}">Scala</option>
+				<option value="{L_BBCODE40_SQL}">SQL</option>
+				<option value="{L_BBCODE40_VISUAL_BASIC}">Visual Basic</option>
+				<option value="{L_BBCODE40_YAML}">Yaml</option>
+				<option value="{L_BBCODE40_XHTML}">xHTML</option>
+				<option value="{L_BBCODE40_XML}">XML</option>
+				<option value="{L_BBCODE40_XSLT}">XSLT</option>
+				
+            </select>]]></find>
+				<action type="replace-with"><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
 
 <option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
 				<option value="{L_BBCODE40_ACTIONSCRIPT}">Actionscript</option>
