@@ -972,7 +972,7 @@
 			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline comments
 			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },			// double quoted strings
 			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },			// single quoted strings
-			{ regex: /\$[a-z_\x7f-\xff][a-z0-9_\x7f-\xff]*/gi		css: 'variable' },			// variables
+			{ regex: /\$[a-z_\x7f-\xff][a-z0-9_\x7f-\xff]*/gi,			css: 'variable' },			// variables
 			{ regex: new RegExp(this.getKeywords(funcs), 'gmi'),		css: 'functions' },			// common functions
 			{ regex: new RegExp(this.getKeywords(constants), 'gmi'),	css: 'constants' },			// constants
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),		css: 'keyword' }			// keyword
