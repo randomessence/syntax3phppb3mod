@@ -66,6 +66,12 @@ multiline comments for SQL [#156](https://github.com/alexgorbatchev/SyntaxHighli
 
 Add missing C++11 keywords [#158](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/158)
 
+PHP brush updated functions, keywords, constants & variable [#159](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/159)
+
+Perl Fix syntax highlighting for adjacent pod blocks [#163](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/163)
+
+Perl Correctly highlight dereferenced vars (double sigils) [#164](https://github.com/alexgorbatchev/SyntaxHighlighter/pull/164)
+
 custom fix for 2 phpbb 3 issues. the replacement of <br> and unindents/tabs [see this post](https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/leading_tabs_in_lines_rendered_non_uniformly-t_101630)
 
 
