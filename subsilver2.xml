@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--NOTICE: Please open this file in your web browser. If presented with a security warning, you may safely tell it to allow the blocked content.-->
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD.\nAlthough MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD.\nNo support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.5.xsd">
+	<header>
+		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
+		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.8]]></title>
+		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
+
+49 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
+		<author-notes lang="en"><![CDATA[a note of credit has top g out to Sniper_E and this post  http://www.rmcgirr83.org/viewtopic.php?f=5&t=1575. the really cool and functional drop down menu is a modified version of this.
+
+Please direct all support issues to :
+
+https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/support/]]></author-notes>
+		<author-group>
+			<author>
+				<username><![CDATA[randomessence]]></username>
+				<homepage><![CDATA[https://github.com/randomessence/syntax3phppb3mod]]></homepage>
+			</author>
+		</author-group>
+		<mod-version>1.1.8</mod-version>
+		<installation>
+			<level>easy</level>
+			<time>120</time>
+			<target-version>3.0.11</target-version>
+		</installation>
+	</header>
+	<action-group>
+		<copy>
+			<file from="root/styles/subsilver2/template/syntaxhighlighter3/*.*" to="styles/subsilver2/template/syntaxhighlighter3/*.*"/>
+		</copy>
+		<open src="styles/subsilver2/template/overall_footer.html">
+			<edit>
+				<find><![CDATA[</body>]]></find>
+				<action type="before-add"><![CDATA[<!-- INCLUDE syntaxhighlighter3/syntaxhighlighter3.html -->]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/overall_header.html">
+			<edit>
+				<find><![CDATA[</head>]]></find>
+				<action type="before-add"><![CDATA[<!-- Syntax Highlighter 3 -->
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/xregexp-all.js"></script>
+<script type="text/javascript">
+// ]]>&lt;![CDATA[<![CDATA[
+XRegExp.install('natives');
+// ]]>]]&gt;<![CDATA[
+</script>
+<script type="text/javascript" src="{ROOT_PATH}js/syntaxhighlighter3/js/shCore.js"></script>
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shCore{SYH3_THEME}.css" rel="stylesheet" type="text/css" />
+<link href="{ROOT_PATH}js/syntaxhighlighter3/styles/shTheme{SYH3_THEME}.css" rel="stylesheet" type="text/css" />]]></action>
+			</edit>
+		</open>
+		<open src="styles/subsilver2/template/posting_buttons.html">
+			<edit>
+				<find><![CDATA[		<!-- IF S_BBCODE_FLASH -->
+			<input type="button" class="btnbbcode" accesskey="d" name="addbbcode18" value="Flash" onclick="bbstyle(18)" onmouseover="helpline('d')" onmouseout="helpline('tip')" />
+		<!-- ENDIF -->]]></find>
+				<action type="after-add"><![CDATA[<select name="addbbcode40" onchange="bbfontstyle('[code2=' + this.form.addbbcode40.options[this.form.addbbcode40.selectedIndex].value + ']', '[/code2]');this.form.addbbcode40.selectedIndex = 0;" title="{L_SYNTAX3}">
+
+<option value="0" selected="selected" style="display: none">{L_SYNTAX3}</option>
+				<option value="{L_BBCODE40_ACTIONSCRIPT}">Actionscript</option>
+				<option value="{L_BBCODE40_ADA}">Ada</option>
+				<option value="{L_BBCODE40_ASSEMBLER_ASM}">Assembler ASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_NASM}">Assembler NASM</option>
+				<option value="{L_BBCODE40_ASSEMBLER_MASM}">Assembler MASM</option>
+				<option value="{L_BBCODE40_APPLESCRIPT}">Applescript</option>
+				<option value="{L_BBCODE40_AUTOHOTKEY}">AutoHotKey</option>
+				<option value="{L_BBCODE40_BASH}">Bash</option>
+				<option value="{L_BBCODE40_BIFERNO}">Biferno</option>
+				<option value="{L_BBCODE40_BATCH}">Batch</option>
+				<option value="{L_BBCODE40_CSHARP}">C#</option>
+				<option value="{L_BBCODE40_CPLUSPLUS}">C++</option>
+				<option value="{L_BBCODE40_CLOJURE}">Clojure</option>
+				<option value="{L_BBCODE40_CMD}">CMD</option>
+				<option value="{L_BBCODE40_COCOA}">Cocoa</option>
+				<option value="{L_BBCODE40_COFFEE_SCRIPT}">Coffee Script</option>
+				<option value="{L_BBCODE40_COLDFUSION}">Coldfusion</option>
+				<option value="{L_BBCODE40_CSS}">CSS</option>
+				<option value="{L_BBCODE40_D}">D</option>
+				<option value="{L_BBCODE40_DELPHI}">Delphi</option>
+				<option value="{L_BBCODE40_DIFF}">Diff</option>
+				<option value="{L_BBCODE40_ERLANG}">Erlang</option>
+				<option value="{L_BBCODE40_FSHARP}">F#</option>
+				<option value="{L_BBCODE40_GROOVY}">Groovy</option>
+				<option value="{L_BBCODE40_HAXE}">Haxe</option>
+				<option value="{L_BBCODE40_HTML}">html</option>
+				<option value="{L_BBCODE40_JAVA}">java</option>
+				<option value="{L_BBCODE40_JAVAFX}">java fx</option>
+				<option value="{L_BBCODE40_JAVASCRIPT}">javascript</option>
+				<option value="{L_BBCODE40_LASSO}">Lasso</option>
+				<option value="{L_BBCODE40_LATEX}">LaTeX</option>
+				<option value="{L_BBCODE40_LOGTALK}">LogTalk</option>
+				<option value="{L_BBCODE40_LSL}">LsL</option>
+				<option value="{L_BBCODE40_LUA}">Lua</option>
+				<option value="{L_BBCODE40_MATHEMATIC}">Mathmatic</option>
+				<option value="{L_BBCODE40_MATLAB}">Matlab</option>
+				<option value="{L_BBCODE40_OBJECTIVE_C}">Objective C</option>
+				<option value="{L_BBCODE40_PASCAL}">Pascal</option>
+				<option value="{L_BBCODE40_PERL}">Perl</option>
+				<option value="{L_BBCODE40_PHP}">PHP</option>
+				<option value="{L_BBCODE40_PLAIN_TEXT}">Plain Text</option>
+				<option value="{L_BBCODE40_POWERSHELL}">Powershell</option>
+				<option value="{L_BBCODE40_PROCESSING}">Processing</option>
+				<option value="{L_BBCODE40_PYTHON}">Python</option>
+				<option value="{L_BBCODE40_PYTHON3}">Python3</option>
+				<option value="{L_BBCODE40_ROUTEROS}">Router OS</option>
+				<option value="{L_BBCODE40_RPG}">RPG</option>
+				<option value="{L_BBCODE40_ILE_RPG}">ILE RPG</option>
+				<option value="{L_BBCODE40_RUBY}">Ruby</option>
+				<option value="{L_BBCODE40_SAHI}">Sahi</option>
+				<option value="{L_BBCODE40_SASS}">Sass</option>
+				<option value="{L_BBCODE40_SCALA}">Scala</option>
+				<option value="{L_BBCODE40_SHELL}">Shell</option>
+				<option value="{L_BBCODE40_SQL}">SQL</option>
+				<option value="{L_BBCODE40_VISUAL_BASIC}">Visual Basic</option>
+				<option value="{L_BBCODE40_YAML}">Yaml</option>
+				<option value="{L_BBCODE40_XHTML}">xHTML</option>
+				<option value="{L_BBCODE40_XML}">XML</option>
+				<option value="{L_BBCODE40_XSLT}">XSLT</option>
+</select>]]></action>
+			</edit>
+		</open>
+	</action-group>
+</mod>
