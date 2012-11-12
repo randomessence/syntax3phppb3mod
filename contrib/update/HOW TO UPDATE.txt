@@ -4,21 +4,26 @@ It can be done but it is a bad method and it breaks the mod for any extra prosil
 applied to (1.0.4 & 1.1.3)
 
 
+RECOMMENDED WAY TO UPDATE
 
-RECOMMENDED WAY TO UPDATE (Stand alone)
+Remove the old mod via automod and install 1.1.8
 
-In the same folder as this readme is the core install file named
+2ND RECOMMENDED WAY TO UPDATE (Stand alone)
 
-install_mod(1.1.8).xml
+In the root folder of this mod is a file named:
 
-delete this file and all files up to your required update file
+install_mod.xml
 
-you can delete them all except the one you want also.
+delete this file 
 
-once you have the only the file you want left, for example
+Then select the needed update file from this folder and copy and
+paste it into the root of this mod, for example:
 
 install_mod(update 1.1.3 to 1.1.8).xml
 
+and rename it to 
+
+install_mod.xml
 
 re ZIP the mod and then upload it as a stand alone mod.
 
