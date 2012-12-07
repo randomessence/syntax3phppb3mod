@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.8]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.2.0]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 49 brushes included using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .]]></description>
@@ -21,7 +21,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 				<homepage><![CDATA[https://github.com/randomessence/syntax3phppb3mod]]></homepage>
 			</author>
 		</author-group>
-		<mod-version>1.1.8</mod-version>
+		<mod-version>1.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
