@@ -6,7 +6,7 @@
 	<header>
 		<meta name="generator" content="MODX file generated with PP MODX Creator by tumba25 (online version)"/>
 		<license><![CDATA[http://opensource.org/licenses/gpl-license.php GNU General Public License v2]]></license>
-		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.1.9]]></title>
+		<title lang="en"><![CDATA[Syntax Highlighter 3 phpbb3 1.2.0]]></title>
 		<description lang="en"><![CDATA[This is a very simple,stable, fully working Syntax 3 highlighter mod for phpbb3 based on Syntax Highlighter 3 by Alex Gorbatchev. It uses javascript to prettify code used in a custom bbcode.
 
 49 brushes covering 59 languages included, using autoloader to dynamically load brushes as and when they are called instead of permanently embedded in the page source .
@@ -23,7 +23,7 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 				<homepage><![CDATA[https://github.com/randomessence/syntax3phppb3mod]]></homepage>
 			</author>
 		</author-group>
-		<mod-version>1.1.9</mod-version>
+		<mod-version>1.2.0</mod-version>
 		<installation>
 			<level>easy</level>
 			<time>120</time>
@@ -130,6 +130,13 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 					<change><![CDATA[version bump]]></change>
 				</changelog>
 			</entry>
+			<entry>
+				<date>2012-12-07</date>
+				<rev-version>1.2.0</rev-version>
+				<changelog lang="en">
+					<change><![CDATA[changed language install to not potentially conflict with other mods.]]></change>
+				</changelog>
+			</entry>
 		</history>
 		<link-group>
 			<link type="template" href="subsilver2.xml" lang="en">subsilver2</link>
@@ -166,8 +173,10 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 		</open>
 		<open src="language/en/posting.php">
 			<edit>
-				<find><![CDATA['MORE_SMILIES'				=> 'View more smilies',]]></find>
+				<find><![CDATA[	'WRONG_SIZE'				=> 'The image must be at least %1$d pixels wide, %2$d pixels high and at most %3$d pixels wide and %4$d pixels high. The submitted image is %5$d pixels wide and %6$d pixels high.',
+));]]></find>
 				<action type="after-add"><![CDATA[// Begin syntaxhighlighter3
+$lang = array_merge($lang, array(
 	'SYNTAX3'         => 'Select a Syntax',
 	'BBCODE40_ACTIONSCRIPT'      => 'as3',
 	'BBCODE40_ADA'   => 'ada',
@@ -228,15 +237,19 @@ https://www.phpbb.com/customise/db/mod/syntax_highlighter_3_using_autoloader/sup
 	'BBCODE40_XHTML'   => 'xhtml',
 	'BBCODE40_XML'   => 'xml',
 	'BBCODE40_XSLT'   => 'xslt',
+));
 // Begin syntaxhighlighter3]]></action>
 			</edit>
 		</open>
 		<open src="language/en/acp/board.php">
 			<edit>
-				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',]]></find>
-				<action type="after-add"><![CDATA[//Start Syntax Highlighter 3 Themes
+				<find><![CDATA[	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',
+));]]></find>
+				<action type="after-add"><![CDATA[// Start Syntax Highlighter 3 Themes
+$lang = array_merge($lang, array(
 	'SYH3_THEME_NAME'				=> 'SyntaxHighlighter3 Themes',
 	'SYH3_THEME_NAME_EXPLAIN'		=> 'To change the theme to one of the included themes you need to specify the theme name here. A theme name is the name of the code and default css file. So for shCoreMDUltra.css and shThemeMDUltra.css we enter simply: MDUltra .',
+));
 // End Syntax Highlighter 3 Themes]]></action>
 			</edit>
 		</open>
