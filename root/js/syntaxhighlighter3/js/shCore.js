@@ -67,6 +67,7 @@ var sh = {
 	
 	config : {
 		space : '&nbsp;',
+		newlinefix : '<br />',
 		
 		/** Enables use of <SCRIPT type="syntaxhighlighter" /> tags. */
 		useScriptTags : true,
@@ -1469,7 +1470,7 @@ sh.Highlighter.prototype = {
 			line = trim(line);
 			
 			if (line.length == 0)
-				line = sh.config.space;
+				line = sh.config.newlinefix;
 			
 			html += this.getLineHtml(
 				i,
